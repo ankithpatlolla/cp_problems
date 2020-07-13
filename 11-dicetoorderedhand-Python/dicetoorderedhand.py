@@ -14,4 +14,4 @@
 def dicetoorderedhand(a, b, c):
     # your code goes here
     lis = [a, b, c]
-    return ''.join(map(str, lis))
+    return int(''.join(map(str, lis)))
