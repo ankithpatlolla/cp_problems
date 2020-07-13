@@ -14,4 +14,5 @@
 def dicetoorderedhand(a, b, c):
     # your code goes here
     lis = [a, b, c]
-    return int(''.join(map(str, lis[::-1])))
+    lis.sort(reverse=True)
+    return int(''.join(map(str, lis)))
