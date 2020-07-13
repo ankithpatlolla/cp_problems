@@ -14,5 +14,10 @@ def dist(x1, y1, x2, y2):
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
     # your code goes here
-
-    pass
+    x, y, z = dist(x1, y1, x2, y2), dist(x2, y2, x3, y3), dist(x3, y3, x1, y1)
+    hypo = max(x, y, z)
+    if x <= 0 or y <= 0 or z <= 0:
+        return False
+    elif ((x ** 2) + (y ** 2) == (hypo ** 2)) or ((y ** 2) + (z ** 2) == (hypo ** 2)) or ((x ** 2) + (z ** 2) == (hypo ** 2)):
+        return True
+    return False
