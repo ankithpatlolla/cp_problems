@@ -44,7 +44,8 @@ def sortUSA():
 
 def alphaAsia():
     d = locations['Asia']
-    print(sorted(d.items(), key=lambda x: x[1]))
-
-
-alphaAsia()
+    x = sorted(d.items(), key=lambda x: x[1])
+    arr = []
+    for k, v in x:
+        arr.append('' + v[0] + ' - ' + k)
+    return (arr)
