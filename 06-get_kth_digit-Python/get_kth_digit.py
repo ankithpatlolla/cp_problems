@@ -5,5 +5,7 @@
 
 
 def fun_get_kth_digit(digit, k):
-    if len(str(digit)) < k:
+    if len(str(digit)) <= k:
         return 0
+        arr = list(str(digit))
+        return arr[k]
