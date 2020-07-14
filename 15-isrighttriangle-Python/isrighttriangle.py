@@ -14,10 +14,8 @@ def dist(x1, y1, x2, y2):
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
     # your code goes here
-    x, y, z = dist(x1, y1, x2, y2), dist(x2, y2, x3, y3), dist(x3, y3, x1, y1)
-    arr = list((x, y, z))
-    arr.sort()
-    x, y, z = arr
+    x, y, z = sorted([dist(x1, y1, x2, y2), dist(
+        x2, y2, x3, y3), dist(x3, y3, x1, y1)])
     if ((x ** 2) + (y ** 2) == (z ** 2)):
         return True
     return False
