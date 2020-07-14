@@ -13,5 +13,6 @@ def isperfectsquare(n):
         root = math.sqrt(int(n))
         if root == int(root):
             return True
+        return False
     except:
         return False
