@@ -9,5 +9,4 @@ def fun_get_kth_digit(digit, k):
         return 0
     else:
         digit = abs(digit)
-        arr = list(str(digit))[::-1]
-        return int(arr[k])
+        return int(str(digit)[::-1][k])
