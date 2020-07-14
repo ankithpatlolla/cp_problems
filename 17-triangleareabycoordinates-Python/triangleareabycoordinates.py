@@ -4,6 +4,18 @@
 # area of the triangle formed by those three points. Hint: you should make constructive use of
 # the triangleArea function you just wrote above.
 
+import math
+
+
+def triangle_area(a, b, c):
+    s = (a + b + c) / 2
+    return math.sqrt((s) * (s - a) * (s - b) * (s - c))
+
+
+def dist(x1, y1, x2, y2):
+    return math.sqrt((x2 - x1) ** 2 + ((y2 - y1) ** 2))
+
+
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
-	# your code goes here
-	pass
+    a, b, c = dist(x1, y1, x2, y2), dist(x2, y2, x3, y3), dist(x3, y3, x1, y1)
+    return (triangle_area(a, b, c))
