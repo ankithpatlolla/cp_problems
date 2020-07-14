@@ -17,6 +17,6 @@ class Queue:
 
     def dequeue(self):
         if len(self.storage) > 1:
-            temp = self.storage[-1]
-            self.storage = self.storage[:- 1]
+            temp = self.storage[0]
+            self.storage = self.storage[1:]
             return temp
