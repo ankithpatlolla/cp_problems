@@ -6,6 +6,6 @@
 
 def lineintersection(m1, b1, m2, b2):
     # your code goes here
-    if m1 == m2 or (m1 == m2 and b1 == b2):
+    if max(m1, m2) % min(m1, m2) == 0:
         return None
     return (b2 - b1) / (m1 - m2)
