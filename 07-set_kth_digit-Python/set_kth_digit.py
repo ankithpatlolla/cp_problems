@@ -10,4 +10,4 @@ def fun_set_kth_digit(n, k, d):
     if '-' in num:
         re = num[1:][::-1]
         return int('-' + (re[0:k] + str(d) + re[k+1:])[::-1])
-        return int((num[::-1][0:k] + str(d) + num[::-1][k+1:])[::-1])
+    return int((num[::-1][0:k] + str(d) + num[::-1][k+1:])[::-1])
