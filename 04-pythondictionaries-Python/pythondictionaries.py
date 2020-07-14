@@ -31,7 +31,7 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']}}
-locations['Asia'] = {'India': ['Banglore']}
+locations['Asia'] = {'India': ['Bangalore']}
 locations['North America']['USA'].append('Atlanta')
 locations['Africa'] = {'Egypt': ['Cario']}
 locations['Asia']['China'] = ['Shanghai']
@@ -43,8 +43,7 @@ def sortUSA():
 
 
 def alphaAsia():
-    d = locations['Asia']
-    x = sorted(d.items(), key=lambda x: x[1])
+    x = sorted(locations['Asia'].items(), key=lambda x: x[1])
     arr = []
     for k, v in x:
         arr.append('' + v[0] + ' - ' + k)
