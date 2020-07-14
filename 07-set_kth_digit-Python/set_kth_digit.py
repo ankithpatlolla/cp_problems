@@ -8,5 +8,5 @@
 def fun_set_kth_digit(n, k, d):
     num = str(n)
     if '-' in num:
-        re = num[1:]
-        return ('-' + re[0:k] + str(d) + re[k+1:])
+        re = num[1:][::-1]
+        return int('-' + (re[0:k] + str(d) + re[k+1:])[::-1])
