@@ -16,7 +16,9 @@ class Queue:
         return self.storage[0]
 
     def dequeue(self):
-        if len(self.storage) > 1:
+        try:
             temp = self.storage[0]
             self.storage = self.storage[1:]
             return temp
+        except:
+            return None
