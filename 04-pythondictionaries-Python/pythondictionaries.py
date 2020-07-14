@@ -31,3 +31,7 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']}}
+locations['Asia'] = {'India': ['Banglore']}
+locations['North America'] = {'USA': ['Atlanta']}
+locations['Africa'] = {'Egypt': ['Cario']}
+locations['Asia'] = {'China': ['Shanghai']}
