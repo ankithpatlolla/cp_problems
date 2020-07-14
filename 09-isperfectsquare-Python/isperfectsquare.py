@@ -5,5 +5,5 @@
 
 def isperfectsquare(n):
     # your code goes here
-    if type(n) is not "int" or n < 0:
+    if n < 0:
         return False
