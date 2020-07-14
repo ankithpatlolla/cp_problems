@@ -17,4 +17,4 @@ def fun_pascaltrianglevalue(row, col):
     elif col == 1 or col == row:
         return 1
     else:
-        return (fac((row) / (fac(row - col) * fac(col))))
+        return (fac(row) / (fac(row - col) * fac(col)))
