@@ -7,7 +7,6 @@ import math
 
 def isperfectsquare(n):
     # your code goes here
-
     try:
         root = math.sqrt(int(n))
         if root == int(root):
