@@ -27,7 +27,7 @@ def ishappynumber(n):
     # your code goes here
     if n == 1:
         return True
-    elif n == 0:
+    elif n == 0 or n == 4:
         return False
     else:
         if n < 10:
