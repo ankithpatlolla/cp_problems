@@ -23,6 +23,9 @@ def fun_rectangle_overlap(left1, top1, width1, height1, left2, top2, width2, hei
     bl2 = [left2, bottom2]
     br2 = [right2, bottom2]
 
-    if (rt1[1] < bl2[1]) or (bl1[1] > rt2[1]) or (rt1[0] < bl2[0]) or (bl1[0] > rt2[0]):
+    if (rt1[1] <= bl2[1]) or (bl1[1] >= rt2[1]) or (rt1[0] <= bl2[0]) or (bl1[0] >= rt2[0]):
+        return False
+
+    if (lt1[0] > br2[0]) or (lt2[0] > br1[0]) or (lt1[1] > br2[1]) or (lt2[1] < br1[1]):
         return False
     return True
