@@ -8,11 +8,15 @@
 # number of rows. For this problem and the next, you should research Triangular Numbers.
 
 def total_balls(n):
-    if n == 0:
-        return 1
-    return n + total_balls(n)
+    count = 0
+    for i in range(n):
+        count += 1
+    print(count)
 
 
 def numberofpoolballs(rows):
     # Your code goes here
     return total_balls(rows)
+
+
+numberofpoolballs(3)
