@@ -30,11 +30,8 @@ def ishappynumber(n):
     elif n == 0 or n == 4:
         return False
     else:
-        if n < 10 and n != 4:
-            return ishappynumber(n % 10 ** n % 10)
-        else:
-            while True:
-                check = sum_num(n)
-                if check < 10 and check != 1:
-                    return False
-                return ishappynumber(check)
+        while n != 0 or n != 4:
+            check = sum_num(n)
+            if check < 10 and check != 1:
+                return False
+            return ishappynumber(check)
