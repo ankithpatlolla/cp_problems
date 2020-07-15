@@ -15,4 +15,4 @@ def largestperfectsquare(n):
         root = math.sqrt(i)
         if root == int(root):
             lps = root
-    return lps
+    return int(lps)
