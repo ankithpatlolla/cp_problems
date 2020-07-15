@@ -11,8 +11,9 @@ import math
 
 def largestperfectsquare(n):
     # your code goes here
-    for i in range(n):
-        root = math.sqrt(i)
-        if root == int(root):
-            lps = i
-    return int(lps)
+    # for i in range(n+1):
+    #     root = math.sqrt(i)
+    #     if root == int(root):
+    #         lps = i
+    # return int(lps)
+    return math.ceil(math.sqrt(n) - math.ceil(math.sqrt(n - 1)))
