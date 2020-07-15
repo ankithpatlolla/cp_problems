@@ -27,13 +27,13 @@ def ishappynumber(n):
     # your code goes here
     if n == 1 or n == 7:
         return True
-    elif n == 0 or n == 4:
+    elif n == 0:
         return False
     else:
         if n < 10:
             return ishappynumber(n ** 2)
         else:
-            while True:
+            while n != 0 or n != 4:
                 check = sum_num(n)
                 if check < 10 and check != 1:
                     return False
