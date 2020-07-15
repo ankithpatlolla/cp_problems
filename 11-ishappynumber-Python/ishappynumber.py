@@ -32,7 +32,7 @@ def ishappynumber(n):
     elif n == 0 or n == 4:
         return False
     else:
-        while n != 0 or n != 4:
+        while True:
             check = sum_num(n)
             if check < 10 and check != 1:
                 return False
