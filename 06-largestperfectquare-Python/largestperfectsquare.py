@@ -11,5 +11,4 @@ import math
 
 def largestperfectsquare(n):
     # your code goes here
-
     return (math.floor(math.sqrt(n)) ** 2)
