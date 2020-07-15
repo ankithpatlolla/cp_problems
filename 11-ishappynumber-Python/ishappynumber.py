@@ -35,4 +35,6 @@ def ishappynumber(n):
                 check = sum_num(n)
                 if check < 10 and check != 1:
                     return False
+                elif check == 1 or check == 7:
+                    return True
                 return ishappynumber(check)
