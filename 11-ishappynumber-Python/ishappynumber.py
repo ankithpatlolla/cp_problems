@@ -18,7 +18,7 @@
 def sum_num(n):
     total = 0
     while n:
-        total += (n % 10) ** 2
+        total += (n % 10) * (n % 10)
         n = n // 10
     return total
 
