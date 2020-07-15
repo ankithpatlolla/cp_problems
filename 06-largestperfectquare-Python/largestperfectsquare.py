@@ -16,4 +16,4 @@ def largestperfectsquare(n):
     #     if root == int(root):
     #         lps = i
     # return int(lps)
-    return math.ceil(math.sqrt(n) - math.ceil(math.sqrt(n - 1)))
+    return math.floor(math.sqrt(n))
