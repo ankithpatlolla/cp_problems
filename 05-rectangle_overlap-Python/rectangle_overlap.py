@@ -13,18 +13,18 @@ def fun_rectangle_overlap(left1, top1, width1, height1, left2, top2, width2, hei
     right2 = left2 + width2
     bottom2 = top2 + height2
 
-    ltl1 = [left1, top1]
-    ltr1 = [right1, top1]
-    btl1 = [left1, bottom1]
-    btr1 = [right1, bottom1]
+    lt1 = [left1, top1]
+    rt1 = [right1, top1]
+    bl1 = [left1, bottom1]
+    br1 = [right1, bottom1]
 
-    ltl2 = [left2, top2]
-    ltr2 = [right2, top2]
-    btl2 = [left2, bottom2]
-    btr2 = [right2, bottom2]
+    lt2 = [left2, top2]
+    rt2 = [right2, top2]
+    bl2 = [left2, bottom2]
+    br2 = [right2, bottom2]
 
-    if (ltl1[0] >= btr2[0]) or (ltl2[0] >= btr1[0]):
+    if (lt1[0] > br2[0]) or (lt2[0] > br1[0]):
         return False
-    if (ltl1[1] <= btr2[1]) or (ltl2[1] <= btr1[1]):
+    if (lt1[1] < br2[1]) or (lt2[1] < br1[1]):
         return False
     return True
