@@ -15,9 +15,9 @@ import math
 
 def fun_fabricyards(inches):
     # your code goes here
-    return math.ceil(inches / 36)
+    return (inches % 36)
 
 
 def fun_fabricexcess(inches):
     # your code goes here
-    return (36 - (fun_fabricyards(inches)))
+    return (36 - (fun_fabricyards(inches) % 36))
