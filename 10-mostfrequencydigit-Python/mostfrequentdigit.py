@@ -5,6 +5,8 @@
 def mostfrequentdigit(n):
     # your code goes here
     d = {}
+    if n == 0:
+        return 0
     while n > 0:
         num = n % 10
         if num in d:
@@ -12,8 +14,5 @@ def mostfrequentdigit(n):
         else:
             d[num] = 1
         n = n // 10
-        print(d)
-    return max(d, key=lambda x: d[x])
-
-
-mostfrequentdigit(24)
+    return max(sorted(d.items(), key=lambda x: (
+        x[0], x[1])), key=lambda k: k[1])[0]
