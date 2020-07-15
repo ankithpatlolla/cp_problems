@@ -11,12 +11,9 @@ def total_balls(n):
     count = 0
     for i in range(1, n+1):
         count += i
-    print(count)
+    return count
 
 
 def numberofpoolballs(rows):
     # Your code goes here
     return total_balls(rows)
-
-
-numberofpoolballs(3)
