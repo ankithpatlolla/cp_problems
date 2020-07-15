@@ -11,5 +11,5 @@ def digitcount(n):
     count = 0
     while n >= 0:
         count += 1
-        n = (n % 10) // n
+        n = (n % 10) // 10
     return count
