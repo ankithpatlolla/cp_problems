@@ -14,5 +14,5 @@ def largestperfectsquare(n):
     for i in range(n):
         root = math.sqrt(i)
         if root == int(root):
-            lps = root
+            lps = i
     return int(lps)
