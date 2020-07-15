@@ -34,6 +34,6 @@ def ishappynumber(n):
     else:
         while True:
             check = sum_num(n)
-            if check < 10 and check != 1:
-                return False
+            # if check < 10 and check != 1:
+            #     return False
             return ishappynumber(check)
