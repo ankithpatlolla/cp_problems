@@ -30,7 +30,7 @@ def ishappynumber(n):
     elif n == 0 or n == 4:
         return False
     else:
-        if n < 10:
+        if n < 10 and n != 4:
             return ishappynumber(n % 10 ** n % 10)
         else:
             while True:
