@@ -11,6 +11,4 @@ def issorted(a):
         return True
     if max(a) == a[0]:
         a = a[::-1]
-    if all(a[i] <= a[i + 1] for i in range(len(a) - 1)):
-        return True
-    return False
+    return all(a[i] <= a[i + 1] for i in range(len(a) - 1))
