@@ -9,7 +9,7 @@ def smallestdifference(a):
     a.sort()
     mini = a[-1]
     for i in range(len(a) - 1):
-        diff = abs(a[i] - a[i + 1])
+        diff = a[i + 1] - a[i]
         if diff < mini:
             mini = diff
-    return diff
+    return mini
