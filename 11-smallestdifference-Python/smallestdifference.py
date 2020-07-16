@@ -6,9 +6,9 @@
 
 def smallestdifference(a):
     # Your code goes here
-    min = float('-inf')
+    mini = max(a)
     for i in range(len(a) - 1):
         diff = abs(a[i] - a[i + 1])
-        if diff < min:
-            min = diff
-    return min
+        if diff < mini:
+            mini = diff
+    return mini
