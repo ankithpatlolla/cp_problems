@@ -35,4 +35,4 @@ def ishappynumber(n):
             return ishappynumber(check)
 
 
-ishappynumber(-23)
+ishappynumber(-3)
