@@ -20,7 +20,7 @@ def sum_num(n):
     while n:
         total += (n % 10) ** 2
         n = n // 10
-        if n < 0:
+        if n == -1:
             return total
     return total
 
@@ -37,4 +37,4 @@ def ishappynumber(n):
             return ishappynumber(check)
 
 
-ishappynumber(-43)
+ishappynumber(-33)
