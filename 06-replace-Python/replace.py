@@ -8,7 +8,7 @@ def fun_replace(s1, s2, s3):
     check = ""
     res = ""
     for i in range(len(s1)):
-        check += i
+        check += s1[i]
         for j in range(i, len(s1)):
             check += j
             if check == s2:
