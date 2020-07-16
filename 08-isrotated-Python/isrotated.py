@@ -8,3 +8,4 @@ def isrotated(str1, str2):
     # Your code goes here
     for i in range(len(str1) - 1, 0, -1):
         return str2 == str1[i:] + str1[:i]
+    return False
