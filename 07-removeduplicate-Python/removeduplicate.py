@@ -8,6 +8,6 @@ def removeduplicate(text):
     l = []
     res = ""
     for i in text:
-        if i in l:
+        if i not in l:
             res += i
     return res
