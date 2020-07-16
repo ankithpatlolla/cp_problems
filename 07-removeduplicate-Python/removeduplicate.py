@@ -12,4 +12,4 @@ def removeduplicate(text):
     #         res += i
     #         l.append(i)
     # return res
-    return ''.join(set(text))
+    return ''.join(set(text.islower()))
