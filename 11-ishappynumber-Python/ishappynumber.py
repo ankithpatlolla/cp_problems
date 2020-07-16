@@ -33,6 +33,3 @@ def ishappynumber(n):
         while True:
             check = sum_num(n)
             return ishappynumber(check)
-
-
-ishappynumber(-7)
