@@ -7,8 +7,6 @@
 
 def issorted(a):
     # your code goes here
-    if len(a) == 0:
-        return None
     if max(a) == a[0]:
         a = a[::-1]
     if all(a[i] <= a[i + 1] for i in range(len(a) - 1)):
