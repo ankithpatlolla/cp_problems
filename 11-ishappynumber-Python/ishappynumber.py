@@ -28,10 +28,13 @@ def sum_num(n):
 def ishappynumber(n):
     # your code goes here
     if n == 1:
-        return True
+        print(True)
     elif n == 0 or n == 4:
-        return False
+        print(False)
     else:
         while True:
             check = sum_num(n)
             return ishappynumber(check)
+
+
+ishappynumber(-13)
