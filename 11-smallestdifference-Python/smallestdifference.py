@@ -6,14 +6,12 @@
 
 def smallestdifference(a):
     # Your code goes here
-    # mini = max(a)
-    # if (len(a) == 2):
-    #     return abs(a[0] - a[1])
-    # for i in range(len(a) - 1):
-    #     for j in range(i + 1, len(a) - 1):
-    #         diff = abs(a[i] - a[j])
-    #         if diff < mini:
-    #             mini = diff
-    # return mini
-    a.sort()
-    return abs(a[0] - a[1])
+    mini = max(a)
+    if (len(a) == 2):
+        return abs(a[0] - a[1])
+    for i in range(len(a) - 1):
+        for j in range(i + 1, len(a) - 1):
+            diff = abs(a[i] - a[j])
+            if diff < mini:
+                mini = diff
+    return mini
