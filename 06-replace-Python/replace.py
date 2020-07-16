@@ -14,7 +14,7 @@ def fun_replace(s1, s2, s3):
             check += s1[j]
             if len(check) == len(s2):
                 break
-                j += 1
+            j += 1
         if check == s2:
             res += s1[:i] + s1[i:j] + s1[j:]
             return res
