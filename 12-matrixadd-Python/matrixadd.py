@@ -18,8 +18,6 @@
 
 def matrixadd(L, M):
     N = []
-    if len(L) != len(M):
-        return None
     for i in range(len(L)):
         line = []
         if len(L[i]) != len(M[i]):
