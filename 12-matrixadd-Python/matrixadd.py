@@ -15,8 +15,15 @@
 # None if the two matrices
 # cannot be added because they are of different dimensions.
 
-import numpy as np
-
 
 def matrixadd(L, M):
-    return np.add(L, M)
+    N = []
+    if len(L) != len(M):
+        return None
+    for i in range(len(L)):
+        line = []
+        for j in range(len(L[0])):
+            s = L[i][j] + M[i][j]
+            line.append(s)
+        N.append(line)
+    return N
