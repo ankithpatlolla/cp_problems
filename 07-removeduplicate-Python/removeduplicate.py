@@ -10,4 +10,5 @@ def removeduplicate(text):
     for i in text:
         if i not in l:
             res += i
+            l.append(i)
     return res
