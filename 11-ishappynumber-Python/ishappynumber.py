@@ -37,4 +37,4 @@ def ishappynumber(n):
             return ishappynumber(check)
 
 
-ishappynumber(-13)
+ishappynumber(-43)
