@@ -6,7 +6,6 @@
 
 def fun_replace(s1, s2, s3):
     res = ""
-    j = 0
     for i in range(len(s1)):
         check = s1[i]
         j = i + 1
@@ -17,4 +16,7 @@ def fun_replace(s1, s2, s3):
             j += 1
         if check == s2:
             res += s1[:i] + s1[i:j] + s1[j:]
-            return res
+            print(res, "$$$$$$$$$$")
+
+            # return res
+fun_replace("helloworld123", "hello", "345")
