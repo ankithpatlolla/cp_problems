@@ -32,11 +32,11 @@ def ishappynumber(n):
 
 
 def fun_nth_happy_number(n):
-    count = 0
+    count = -1
     i = 1
     while True:
         if ishappynumber(i):
             count += 1
             if count == n:
                 return i
-                i += 1
+        i += 1
