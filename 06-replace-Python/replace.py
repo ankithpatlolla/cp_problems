@@ -18,7 +18,6 @@ def fun_replace(s1, s2, s3):
             res += s1[:i] + s1[i:j] + s1[j:]
             print(res, "$$$$$$$$$$")
             break
-    print("yes")
 
     # return res
 fun_replace("helloworld123", "hello", "345")
