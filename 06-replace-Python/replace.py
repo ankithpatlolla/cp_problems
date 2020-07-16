@@ -16,8 +16,4 @@ def fun_replace(s1, s2, s3):
             j += 1
         if check == s2:
             res += s1[:i] + s3 + s1[j + 1:]
-            print(res, "$$$$$$$$$$")
-            break
-
-    # return res
-fun_replace("helloworld123", "123", "345")
+            return res
