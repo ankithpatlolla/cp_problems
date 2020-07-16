@@ -8,10 +8,7 @@ def median(a):
     n = len(a)
     if n == 0:
         return None
-    elif n == 1:
-        return a[0]
-    # elif n % 2 == 0:
-    #     return (a[((n - 1) // 2)] + a[(n + 1) // 2]) / 2
-    # else:
-    #     return a[n // 2]
-    return (a[((n - 1) // 2)] + a[(n + 1) // 2]) / 2
+    elif n % 2 == 0:
+        return (a[((n - 1) // 2)] + a[(n + 1) // 2]) / 2
+    else:
+        return a[n // 2]
