@@ -9,9 +9,8 @@
 def fun_interleave(s1, s2):
     res = ""
     n = min(len(s1), len(s2))
+    m = sorted([s1, s2], key=len)
+    rest = m[1][len(m[1]) - len(m[0]) - 2:]
     for i in range(n):
-        if i == n - 2:
-            res += s1[i + 1:] + s2[i + 1:]
-            break
         res += s1[i] + s2[i]
-    return res
+    return res + rest
