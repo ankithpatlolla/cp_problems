@@ -10,7 +10,7 @@ def fun_replace(s1, s2, s3):
     for i in range(len(s1)):
         check += s1[i]
         for j in range(i, len(s1)):
-            check += j
+            check += s1[j]
             if check == s2:
                 res += s1[:i] + s1[i:j] + s1[j:]
     return res
