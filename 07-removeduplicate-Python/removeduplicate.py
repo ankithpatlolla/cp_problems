@@ -5,11 +5,10 @@
 
 def removeduplicate(text):
     # Your code goes here
-    # l = []
-    # res = ""
-    # for i in text:
-    #     if i not in l:
-    #         res += i
-    #         l.append(i)
-    # return res
-    return ''.join(set(text.islower()))
+    l = []
+    res = ""
+    for i in text:
+        if i not in l:
+            res += i
+            l.append(i)
+    return res
