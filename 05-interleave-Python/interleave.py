@@ -14,5 +14,5 @@ def fun_interleave(s1, s2):
     for i in range(n):
         res += s1[i] + s2[i]
         if i == n - 1 and len(s1) != len(s2):
-            res += m[1][i:]
+            res += m[1][i + 1:]
     return res
