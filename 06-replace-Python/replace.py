@@ -6,10 +6,15 @@
 
 def fun_replace(s1, s2, s3):
     res = ""
+    j = 0
     for i in range(len(s1)):
         check = s1[i]
-        for j in range(i + 1, len(s1)):
+        j = i + 1
+        while j > len(s1):
             check += s1[j]
-            if check == s2:
-                res += s1[:i] + s1[i:j] + s1[j:]
-                return res
+            if len(check) == len(s2):
+                break
+                j += 1
+        if check == s2:
+            res += s1[:i] + s1[i:j] + s1[j:]
+            return res
