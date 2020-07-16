@@ -9,14 +9,13 @@
 # assert(applyCaesarCipher("We Attack At Dawn", 1) == "Xf Buubdl Bu Ebxo")
 # assert(applyCaesarCipher("zodiac", -2) == "xmbgya")
 
-
 def fun_applycaesarcipher(msg, shift):
     res = ""
     for i in msg:
         if i == " ":
             res += i
-        elif (ord(i) >= 65 and ord(i) <= 90):
-            res += chr((ord(i) % 90) + shift)
-        elif (ord(i) >= 97 and ord(i) <= 122):
-            res += chr(ord(i) % 122 + shift)
+        if i.islower():
+            res += chr(((ord(i) + shift - 97) % 26) + 97)
+        elif i.isupper():
+            res += chr(((ord(i) + shift - 65) % 26) + 65)
     return res
