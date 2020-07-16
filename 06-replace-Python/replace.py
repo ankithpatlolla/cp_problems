@@ -9,7 +9,7 @@ def fun_replace(s1, s2, s3):
     for i in range(len(s1)):
         check = s1[i]
         j = i + 1
-        while j > len(s1):
+        while j < len(s1):
             check += s1[j]
             if len(check) == len(s2):
                 break
