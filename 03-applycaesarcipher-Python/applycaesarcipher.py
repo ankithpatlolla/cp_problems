@@ -16,5 +16,5 @@ def fun_applycaesarcipher(msg, shift):
         if i == " ":
             res += i
         else:
-            res += chr((ord(i)) + shift)
+            res += chr((ord(i) % 127) + shift)
     return res
