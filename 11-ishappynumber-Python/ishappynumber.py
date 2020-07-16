@@ -26,9 +26,9 @@ def sum_num(n):
 def ishappynumber(n):
     # your code goes here
     if n == 1:
-        print(True)
+        return True
     elif n == 0 or n == 4:
-        print(False)
+        return False
     else:
         while True:
             check = sum_num(n)
