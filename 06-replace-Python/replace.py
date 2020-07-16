@@ -15,7 +15,7 @@ def fun_replace(s1, s2, s3):
                 break
             j += 1
         if check == s2:
-            res += s1[:i] + s1[i:j] + s1[j:]
+            res += s1[:i] + check + s1[j:]
             print(res, "$$$$$$$$$$")
             break
 
