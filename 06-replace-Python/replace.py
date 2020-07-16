@@ -16,5 +16,8 @@ def fun_replace(s1, s2, s3):
             j += 1
         if check == s2:
             res += s1[:i] + s3 + s1[j + 1:]
-            return res
+            if (res.find(s2) == -1):
+                return res
+            else:
+                return fun_replace(res, s2, s3)
     return s1
