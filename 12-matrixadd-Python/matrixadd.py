@@ -22,6 +22,8 @@ def matrixadd(L, M):
         return None
     for i in range(len(L)):
         line = []
+        if len(L[i]) != len(M[i]):
+            return None
         for j in range(len(L[0])):
             s = L[i][j] + M[i][j]
             line.append(s)
