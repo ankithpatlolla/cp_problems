@@ -36,7 +36,7 @@ class LinkedList(object):
         # Your code goes here
         pos = 1
         temp = self.head
-        while temp is not None:
+        while pos < position:
             if pos == position:
                 return temp
             else:
@@ -59,7 +59,7 @@ class LinkedList(object):
         #     pos += 1
         # new_element.next = temp.next.next
         # temp.next = new_element
-        temp = get_position(position - 2)
+        temp = get_position(position)
         new_element.next = temp.next.next
         temp.next = new_element
 
