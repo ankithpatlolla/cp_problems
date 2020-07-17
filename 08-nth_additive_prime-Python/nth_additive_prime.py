@@ -12,9 +12,11 @@ def is_prime(n):
 
 def fun_nth_additive_prime(n):
     count = 0
+    i = 2
     while True:
         if is_prime(i) and is_prime(sum(i)):
             if count == n:
                 return i
             count += 1
+            i += 1
     return 1
