@@ -63,7 +63,7 @@ class LinkedList(object):
         else:
             while temp != None:
                 if temp.next.value == value:
-                    temp.next = temp.next.next
+                    temp = temp.next
                     break
                 else:
                     temp = temp.next
