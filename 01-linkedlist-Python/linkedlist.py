@@ -42,6 +42,7 @@ class LinkedList(object):
             else:
                 temp = temp.next
                 pos += 1
+        return None
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
