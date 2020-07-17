@@ -21,6 +21,11 @@ def is_uniqe(n):
 
 
 def fun_isfactorish(n):
-    if n < 100 or n > 999:
+    if (n < 100 or n > 999) or not is_uniqe(n):
         return False
-    return False
+    n = abs(n)
+    while n:
+        if n % (n % 10) != 0:
+            return False
+        n = int(n / 10)
+    return True
