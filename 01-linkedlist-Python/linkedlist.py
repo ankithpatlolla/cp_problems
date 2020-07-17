@@ -35,7 +35,7 @@ class LinkedList(object):
         Return "None" if position is not in the list."""
         # Your code goes here
         temp = self.head
-        while temp != 1:
+        while position != 1:
             temp = temp.next
             if temp == None:
                 return None
