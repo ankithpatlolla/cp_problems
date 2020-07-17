@@ -21,6 +21,7 @@ def is_uniqe(n):
 
 
 def fun_isfactorish(n):
+    n = abs(n)
     if len(str(n)) != 3 or not is_uniqe(n):
         return False
     n = abs(n)
