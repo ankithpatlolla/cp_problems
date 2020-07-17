@@ -35,12 +35,21 @@ class LinkedList(object):
         Return "None" if position is not in the list."""
         # Your code goes here
         temp = self.head
-        while position != 1:
+        # while position != 1:
+        #     temp = temp.next
+        #     if temp == None:
+        #         return None
+        #     position -= 1
+        # return temp
+        pos = 1
+        if position == 1:
+            return temp
+        while temp != None:
+            if pos == position:
+                return temp
             temp = temp.next
-            if temp == None:
-                return None
-            position -= 1
-        return temp
+            pos += 1
+        return None
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
