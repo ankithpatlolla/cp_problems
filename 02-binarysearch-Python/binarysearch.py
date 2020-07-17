@@ -14,10 +14,10 @@ doesn't exist in the list."""
 def binary_search(input_array, value):
     # Your code goes here
     n = len(input_array) - 1
-    mid = 1 + ((n-1) // 2)
     low = 0
     high = n
     while low <= high:
+        mid = 1 + ((high - low) // 2)
         if input_array[mid] == value:
             return mid
         elif input_array[mid] < value:
