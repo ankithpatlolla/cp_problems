@@ -36,11 +36,12 @@ class LinkedList(object):
         # Your code goes here
         pos = 1
         temp = self.head
-        while temp.next is not None:
+        while temp is not None:
             if pos == position:
                 return temp
             else:
                 temp = temp.next
+                pos += 1
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
