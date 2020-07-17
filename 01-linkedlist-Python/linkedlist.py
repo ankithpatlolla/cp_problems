@@ -21,11 +21,11 @@ class LinkedList(object):
 
     def append(self, new_element):
         # Your code goes here
-        if self.head is None:
+        if self.head == None:
             self.head = new_element
         else:
             temp = self.head
-            while temp.next is not None:
+            while temp.next != None:
                 temp = temp.next
             temp.next = new_element
 
