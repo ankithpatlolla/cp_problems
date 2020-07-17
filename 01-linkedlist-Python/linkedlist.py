@@ -59,6 +59,7 @@ class LinkedList(object):
         count = 0
         while temp.next != None:
             count += 1
+            temp = temp.next
         return count
 
     def delete(self, value):
