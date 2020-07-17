@@ -33,7 +33,7 @@ def isrotation(x, y):
     digits = num_count(x)
     expo = 10 ** (digits - 1)
     for i in range(digits - 1):
-        x = ((x % 10) * expo + (x / 10))
+        x = int((x % 10) * expo + (x / 10))
         print(x, "in isRotate")
         if x == y:
             return True
