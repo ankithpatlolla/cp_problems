@@ -18,5 +18,5 @@ def fun_nth_additive_prime(n):
             if count == n:
                 return i
             count += 1
-            i += 1
+        i += 1
     return 1
