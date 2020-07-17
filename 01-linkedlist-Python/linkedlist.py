@@ -57,7 +57,7 @@ class LinkedList(object):
     def length(self):
         temp = self.head
         count = 0
-        while temp.next != None:
+        while temp != None:
             count += 1
             temp = temp.next
         return count
