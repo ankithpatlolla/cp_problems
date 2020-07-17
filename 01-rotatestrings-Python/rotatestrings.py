@@ -9,9 +9,9 @@ def fun_rotatestrings(s, n):
     res = ""
     if n < 0:
         for i in range(abs(n)):
-            res += s[-1] + s[:-1]
+            res = s[-1] + s[:-1]
         return res
     else:
         for i in range(n):
-            res += s[1:] + s[0]
+            res = s[1:] + s[0]
         return res
