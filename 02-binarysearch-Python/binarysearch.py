@@ -14,7 +14,7 @@ doesn't exist in the list."""
 def binary_search(input_array, value):
     # Your code goes here
     n = len(input_array)
-    mid = 1 + (n-1) / 2
+    mid = 1 + (n-1) // 2
     low = input_array[0]
     high = input_array[-1]
     while low < high:
