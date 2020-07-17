@@ -50,9 +50,11 @@ class LinkedList(object):
         the 2nd and 3rd elements."""
         # Your code goes here
         pos = 1
-        temp = self.head
-        while pos < position - 2:
-            temp = temp.next
+        while pos < position:
+            if pos == 1:
+                temp = self.head
+            else:
+                temp = temp.next
             pos += 1
         rem = temp.next
         temp = new_element
