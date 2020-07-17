@@ -51,7 +51,7 @@ class LinkedList(object):
         # Your code goes here
         pos = 1
         temp = self.head
-        while pos < position:
+        while pos < position - 1:
             temp = temp.next
             pos += 1
         new_element.next = temp.next.next
