@@ -67,3 +67,5 @@ class LinkedList(object):
                     node = temp.next
                     temp.next = node.next
                     break
+                else:
+                    temp = temp.next
