@@ -65,6 +65,6 @@ class LinkedList(object):
         # Your code goes here
         temp = self.head
         while temp is not None:
-            if temp.value == value:
+            if temp == value:
                 return temp
             temp = temp.next
