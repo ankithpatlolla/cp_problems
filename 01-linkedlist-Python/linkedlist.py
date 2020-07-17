@@ -38,12 +38,13 @@ class LinkedList(object):
         temp = self.head
         if position == 1:
             return self.head
-        while temp is not None:
-            if pos == position:
-                return temp
-            else:
-                temp = temp.next
-                pos += 1
+        else:
+            while temp is not None:
+                if pos == position:
+                    return temp
+                else:
+                    temp = temp.next
+                    pos += 1
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
