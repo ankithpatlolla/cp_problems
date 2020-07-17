@@ -59,7 +59,7 @@ class LinkedList(object):
         # Your code goes here
         temp = self.head
         while temp.next != None:
-            if temp.value == value:
+            if temp.next.value == value:
                 break
             temp = temp.next
         temp = temp.next
