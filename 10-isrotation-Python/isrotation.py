@@ -14,8 +14,20 @@ def num_count(n):
     return count
 
 
+def rev(n):
+    reversed = 0
+    while n:
+        rem = n % 10
+        reversed = (reversed * 10) + rem
+        n = n // 10
+    return reversed
+
+
 def isrotation(x, y):
     # Your code goes here
+
+    if rev(x) == y:
+        return True
     digits = num_count(x)
     expo = 10 ** (digits - 1)
     for i in range(digits - 1):
