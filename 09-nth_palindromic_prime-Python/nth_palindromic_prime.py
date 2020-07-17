@@ -19,12 +19,9 @@ def is_prime(n):
 
 
 def is_pal(n):
-    rev = 0
-    while n:
-        rem = n % 10
-        rev = (rev * 10) + rem
-        n = n // 10
-    return rev == n
+    if n < 10:
+        return True
+    return str(n) == str(n)[::-1]
 
 
 def fun_nth_palindromic_prime(n):
