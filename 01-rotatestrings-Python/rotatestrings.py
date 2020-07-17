@@ -6,11 +6,7 @@
 
 
 def fun_rotatestrings(s, n):
+    turn = abs(n) % len(s)
     if n < 0:
-        for i in range(abs(n)):
-            s = s[-1] + s[:-1]
-        return s
-    else:
-        for i in range(n):
-            s = s[1:] + s[0]
-        return s
+        return s[turn:] + s[:turn]
+    return s[:turn] + s[turn:]
