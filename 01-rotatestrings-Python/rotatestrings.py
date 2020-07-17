@@ -13,5 +13,5 @@ def fun_rotatestrings(s, n):
         return res
     else:
         for i in range(n):
-            res += s[1:] + s[:0]
+            res += s[1:] + s[0]
         return res
