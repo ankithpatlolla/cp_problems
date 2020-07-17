@@ -54,8 +54,8 @@ class LinkedList(object):
         while pos < position:
             temp = temp.next
             pos += 1
-        new_element.next = temp.next
-        temp = new_element
+        new_element.next = temp.next.next
+        temp.next = new_element
 
     def delete(self, value):
         """Delete the first node with a given value."""
