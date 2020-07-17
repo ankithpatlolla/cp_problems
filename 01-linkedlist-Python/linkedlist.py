@@ -59,7 +59,7 @@ class LinkedList(object):
         #     pos += 1
         # new_element.next = temp.next.next
         # temp.next = new_element
-        temp = get_position(self, position)
+        temp = get_position(position)
         new_element.next = temp.next.next
         temp.next = new_element
 
