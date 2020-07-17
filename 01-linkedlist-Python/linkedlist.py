@@ -51,7 +51,7 @@ class LinkedList(object):
         Inserting at position 3 means between
         the 2nd and 3rd elements."""
         # Your code goes here
-        temp = get_position(position)
+        temp = get_position(position - 1)
         new_element.next = temp.next
         temp.next = new_element
 
