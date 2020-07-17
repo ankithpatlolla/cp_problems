@@ -38,13 +38,12 @@ class LinkedList(object):
         temp = self.head
         if position == 1:
             return self.head
-        else:
-            while temp is not None:
-                if pos == position:
-                    return temp
-                else:
-                    temp = temp.next
-                    pos += 1
+        while temp is not None:
+            if pos == position:
+                return temp
+            else:
+                temp = temp.next
+                pos += 1
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
@@ -52,8 +51,14 @@ class LinkedList(object):
         Inserting at position 3 means between
         the 2nd and 3rd elements."""
         # Your code goes here
-        temp = get_position(position - 1)
-        new_element.next = temp.next
+        pos = 1
+        while pos < position:
+            if pos == 1:
+                temp = self.head
+            else:
+                temp = temp.next
+            pos += 1
+        new_element.next = temp.next.next
         temp.next = new_element
 
     def delete(self, value):
