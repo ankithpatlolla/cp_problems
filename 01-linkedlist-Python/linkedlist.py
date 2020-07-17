@@ -60,8 +60,3 @@ class LinkedList(object):
         temp = self.head
         if temp.value == value:
             temp = temp.next
-        while temp.next != None:
-            if temp.next.value == value:
-                break
-            temp = temp.next
-        temp.next = temp.next.next
