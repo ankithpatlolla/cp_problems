@@ -26,3 +26,4 @@ def binary_search(input_array, value):
             high = mid
         else:
             low = mid
+    return -1
