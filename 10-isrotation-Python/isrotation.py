@@ -34,10 +34,10 @@ def isrotation(x, y):
     expo = 10 ** (digits - 1)
     for i in range(digits - 1):
         x = int((x % 10) * expo + (x / 10))
-        print(x, "in isRotate")
+        # print(x, "in isRotate")
         if x == y:
             return True
     return False
 
 
-print(isrotation(10010, 10100))
+# print(isrotation(10010, 10100))
