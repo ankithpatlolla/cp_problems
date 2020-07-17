@@ -66,6 +66,5 @@ class LinkedList(object):
             prev = temp
             temp = temp.next
 
-        if temp != None:
-            prev.next = temp.next
-            temp = None
+        prev.next = temp.next
+        temp = None
