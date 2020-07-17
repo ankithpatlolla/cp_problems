@@ -10,11 +10,19 @@ def is_prime(n):
     return True
 
 
+def is_sum(n):
+    count = 0
+    while n:
+        count += n % 10
+        n = int(n / 10)
+    return is_prime(count)
+
+
 def fun_nth_additive_prime(n):
     count = 0
     i = 2
     while True:
-        if is_prime(i) and is_prime(sum(i)):
+        if is_prime(i) and is_sum(i):
             if count == n:
                 return i
             count += 1
