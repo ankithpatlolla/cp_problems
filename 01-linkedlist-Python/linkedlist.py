@@ -54,7 +54,7 @@ class LinkedList(object):
         while pos < position - 2:
             temp = temp.next
             pos += 1
-        rem = temp.nextsa
+        rem = temp.next
         temp = new_element
         temp.next = rem
 
