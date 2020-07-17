@@ -10,25 +10,24 @@
 #  assert(fun_isfactorish(420) == False) # 420 has a 0 (0 is not a factor)
 #  assert(fun_isfactorish(42) == False) # 42 has a leading 0 (only 2 unique digits)
 
-def is_uniqe(n):
-    l = []
-    while n:
-        if n % 10 in l:
-            return False
-        l.append(n % 10)
-        n = int(n / 10)
-    return True
+# def is_uniqe(n):
+#     l = []
+#     while n:
+#         if n % 10 in l:
+#             return False
+#         l.append(n % 10)
+#         n = int(n / 10)
+#     return True
 
 
 def fun_isfactorish(n):
     n = abs(n)
-    if len(str(n)) != 3 or not is_uniqe(n):
+    if len(str(n)) != 3:
         return False
-    n = abs(n)
+    l = []
     while n:
-        if n % 10 == 0:
+        if (n % 10 == 0) or (n % 10 in l) or (n % (n % 10) != 0):
             return False
-        if n % (n % 10) != 0:
-            return False
+        l.append(n % 10)
         n = int(n / 10)
     return True
