@@ -66,10 +66,10 @@ class LinkedList(object):
         temp = self.head
         if self.head.value == value:
             self.head = temp.next
-        else:
+
+        elif temp.next is not None:
             while temp.next is not None:
                 if temp.next.value == value:
                     break
                 temp = temp.next
-        if temp.next.next != None:
             temp.next = temp.next.next
