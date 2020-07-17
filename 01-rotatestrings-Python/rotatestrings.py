@@ -8,5 +8,5 @@
 def fun_rotatestrings(s, n):
     turn = abs(n) % len(s)
     if n < 0:
-        return s[turn:] + s[:turn]
-    return s[:turn] + s[turn:]
+        return s[:turn] + s[turn:]
+    return s[turn:] + s[:turn]
