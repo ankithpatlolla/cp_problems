@@ -60,7 +60,7 @@ class LinkedList(object):
         if temp != None and temp.value == value:
             self.head = temp.next
         else:
-            while temp != None:
+            while temp != None and temp.next != None:
                 if temp.value == value:
                     prev.next = temp.next
                     break
