@@ -21,7 +21,8 @@ def is_pal(n):
 
 def fun_nth_palindromic_prime(n):
     count = 0
-    for i in range(n):
+    i = 2
+    while True:
         if is_prime(i) and is_pal(i):
             if count == n:
                 return i
