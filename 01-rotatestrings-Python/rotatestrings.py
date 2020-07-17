@@ -6,12 +6,12 @@
 
 
 def fun_rotatestrings(s, n):
-    res = ""
+    res = s
     if n < 0:
         for i in range(abs(n)):
-            res = s[-1] + s[:-1]
+            res = res[-1] + res[:-1]
         return res
     else:
         for i in range(n):
-            res = s[1:] + s[0]
+            res = res[1:] + res[0]
         return res
