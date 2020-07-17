@@ -25,6 +25,8 @@ def fun_isfactorish(n):
         return False
     n = abs(n)
     while n:
+        if n % 10 == 0:
+            return False
         if n % (n % 10) != 0:
             return False
         n = int(n / 10)
