@@ -21,7 +21,7 @@ def binary_search(input_array, value):
         if input_array[mid] == value:
             return mid
         elif input_array[mid] < value:
-            high = mid - 1
-        else:
             low = mid + 1
+        else:
+            high = mid - 1
     return -1
