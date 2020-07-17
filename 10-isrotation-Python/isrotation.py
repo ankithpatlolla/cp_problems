@@ -13,17 +13,13 @@ def num_count(n):
         count += 1
     return count
 
-def rotate(n):
-	digits = num_count(x)
-	expo = 10 ** (digits - 1)
-	return ((x % 10) * expo + (x / 10))
-		
+
 def isrotation(x, y):
     # Your code goes here
-    
-	k = rotate(x)
-	if k == y:
-		return True
-	return rotate(k)	
-
-   
+    digits = num_count(x)
+    expo = 10 ** (digits - 1)
+    for i in range(digits - 1):
+        x = ((x % 10) * expo + (x / 10))
+        if x == y:
+            return True
+    return False
