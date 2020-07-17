@@ -25,16 +25,22 @@ class LinkedList(object):
             self.head = new_element
         else:
             temp = self.head
-            while temp is not None:
+            while temp.next is not None:
                 temp = temp.next
-            temp = new_element
+            temp.next = new_element
 
     def get_position(self, position):
         """Get an element from a particular position.
         Assume the first position is "1".
         Return "None" if position is not in the list."""
         # Your code goes here
-        pass
+        pos = 1
+        temp = self.head
+        while temp.next is not None:
+            if pos == position:
+                return temp
+            else:
+                temp = temp.next
 
     def insert(self, new_element, position):
         """Insert a new node at the given position.
