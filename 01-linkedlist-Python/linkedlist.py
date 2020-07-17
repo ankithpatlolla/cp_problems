@@ -59,4 +59,4 @@ class LinkedList(object):
         # Your code goes here
         temp = self.head
         if (temp.next != None) and (temp.value == value):
-            temp = self.head.next
+            temp = temp.next
