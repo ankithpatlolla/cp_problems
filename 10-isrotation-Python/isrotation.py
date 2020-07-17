@@ -26,8 +26,10 @@ def rev(n):
 def isrotation(x, y):
     # Your code goes here
 
-    if (rev(x) == y) or (num_count(x) != num_count(y)):
+    if (rev(x) == y):
         return True
+    if num_count(x) != num_count(y):
+        return False
     digits = num_count(x)
     expo = 10 ** (digits - 1)
     for i in range(digits - 1):
