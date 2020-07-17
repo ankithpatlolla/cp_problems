@@ -36,6 +36,8 @@ class LinkedList(object):
         # Your code goes here
         pos = 1
         temp = self.head
+        if position == 1:
+            return temp
         while pos <= position and temp != None:
             if pos == position:
                 return temp
