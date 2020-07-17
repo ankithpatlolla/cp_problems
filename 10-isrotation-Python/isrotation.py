@@ -17,11 +17,10 @@ def num_count(n):
 def isrotation(x, y):
     # Your code goes here
     digits = num_count(x)
-    expo = 10 ** (digits)
+    expo = 10 ** (digits - 1)
     l = []
     for i in range(digits):
-        rem = x // expo
-        rotation = ((x * 10) + rem) - (rem * expo)
+        rotation = (x % 10) * expo + (x / 10)
         l.append(rotation)
     if y in l:
         return True
