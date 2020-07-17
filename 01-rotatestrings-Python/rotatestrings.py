@@ -6,9 +6,9 @@
 
 
 def fun_rotatestrings(s, n):
-    if n <= len(s):
+    if abs(n) <= len(s):
         return s[n:] + s[:n]
-    elif n < 0:
+    elif n > len(s) and n < 0:
         return s[-2:] + s[:-2]
     else:
         return s[2:] + s[:2]
