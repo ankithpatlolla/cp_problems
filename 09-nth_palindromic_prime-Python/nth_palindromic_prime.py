@@ -26,5 +26,5 @@ def fun_nth_palindromic_prime(n):
         if is_prime(i) and is_pal(i):
             if count == n:
                 return i
-                count += 1
-                i += 1
+            count += 1
+        i += 1
