@@ -15,14 +15,15 @@ def lookandsay(a):
     #         l.append((a.count(i), i))
     i = 0
     prev = a[0]
+    print(prev)
     while i < len(a):
         count = 1
         while a[i] == prev:
             count += 1
             i += 1
-            prev = i
             if i == len(a):
                 break
+            prev = a[i]
         l.append((count, prev))
         i += 1
     return l
