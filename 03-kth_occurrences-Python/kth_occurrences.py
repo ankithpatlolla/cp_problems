@@ -6,13 +6,10 @@
 def fun_kth_occurrences(s, n):
     s = s.strip()
     maxi = 0
-    lst = []
     res = ''
     for i in s:
-        if i != " " and i not in lst:
+        if i != " ":
             if s.count(i) >= maxi:
                 maxi = s.count(i)
                 res = i
-        else:
-            lst.append(i)
     return res
