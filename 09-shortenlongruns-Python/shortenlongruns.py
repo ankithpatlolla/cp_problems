@@ -18,7 +18,7 @@ def shortenlongruns(L, k):
         if L[i] == L[i + 1]:
             print(L[i])
             if count >= k:
-                return L[:i - 2] + L[i - 2:]
+                return L[:i - k] + L[i - k:]
             count += 1
         i += 1
 
