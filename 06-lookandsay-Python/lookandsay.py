@@ -19,6 +19,7 @@ def lookandsay(a):
             count = 1
         j = i
         while a[j] == prev:
+            prev = a[j]
             count += 1
             j += 1
             if j + 1 == len(a):
