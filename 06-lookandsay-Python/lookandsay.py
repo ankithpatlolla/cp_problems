@@ -10,21 +10,19 @@
 def lookandsay(a):
     # Your code goes here
     l = []
-    # for i in a:
-    #     if ((a.count(i), i)) not in l:
-    #         l.append((a.count(i), i))
     i = 0
     prev = a[0]
-    print(prev)
-    while i < len(a):
-        count = 1
+    while i < len(a) - 1:
+        if i == 0:
+            count = 0
+        else:
+            count = 1
         while a[i] == prev:
             count += 1
             i += 1
-            if i == len(a):
+            if i + 1 == len(a):
                 break
-            prev = a[i]
-        l.append((count, prev))
+        l.append((count, a[i]))
         i += 1
     return l
 
