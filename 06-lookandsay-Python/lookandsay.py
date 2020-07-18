@@ -11,12 +11,13 @@ def lookandsay(a):
     # Your code goes here
     l = []
     i = 0
-    prev = a[0]
     while i < len(a):
+        if i == len(a) - 1:
+            l.append((1, a[-1]))
+            return l
         count = 1
-        while a[i] == prev:
+        while a[i] == a[i + 1]:
             count += 1
-            prev = a[i]
             i += 1
             if i + 1 == len(a):
                 break
@@ -25,4 +26,4 @@ def lookandsay(a):
     return l
 
 
-print(lookandsay([-1, 2, 7]))
+# print(lookandsay([-1, 2, 7, 7]))
