@@ -19,7 +19,7 @@ def shortenlongruns(L, k):
         while L[i] == L[i + 1]:
             i += 1
             if (i + 1) == len(L) or count == k:
-                return L[:j + k - 1] + L[j + k + 1:]
+                return L[:j + k] + L[j + k + 1:]
             count += 1
         i += 1
 
