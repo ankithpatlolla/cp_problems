@@ -24,7 +24,6 @@ def lookandsay(a):
             if j + 1 == len(a):
                 break
             prev = a[j]
-
         l.append((count, prev))
         i += 1
     return l
