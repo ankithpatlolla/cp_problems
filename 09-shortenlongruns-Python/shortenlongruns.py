@@ -24,4 +24,4 @@ def shortenlongruns(L, k):
         i += 1
 
 
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
