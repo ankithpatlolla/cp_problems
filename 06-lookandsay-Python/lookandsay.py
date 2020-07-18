@@ -14,15 +14,18 @@ def lookandsay(a):
     #     if ((a.count(i), i)) not in l:
     #         l.append((a.count(i), i))
     i = 0
-    while i < len(a) - 1:
+    prev = a[0]
+    while i < len(a):
         count = 1
-        while a[i] == a[i + 1]:
+        while a[i] == prev:
             count += 1
             i += 1
-            if i == len(a) - 1:
+            prev = i
+            if i == len(a):
                 break
-        l.append((count, a[i]))
+        l.append((count, prev))
         i += 1
     return l
 
-    return l
+
+print(lookandsay([-1, 2, 7]))
