@@ -29,4 +29,4 @@ def lookandsay(a):
     return l
 
 
-print(lookandsay([-1, 2, 7]))
+# print(lookandsay([-1, 2, 7]))
