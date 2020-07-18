@@ -5,11 +5,15 @@
 
 def fun_kth_occurrences(s, n):
     s = s.strip()
-    maxi = 0
-    res = ''
-    for i in s:
-        if i != " ":
-            if s.count(i) >= maxi:
-                maxi = s.count(i)
-                res = i
-    return res
+    d = {}
+    for i in set(s):
+        key = s.count(i)
+        if key in d:
+            d[key].append(i)
+        else:
+            d[key] = [i]
+    k = sorted(d, key=lambda x: x)
+    print(k)
+
+
+fun_kth_occurrences("england", 4)
