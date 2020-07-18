@@ -18,3 +18,4 @@ def shortenlongruns(L, k):
             count += 1
             if count == k:
                 return L[:i - k] + L[i:]
+                i += 1
