@@ -12,17 +12,18 @@ def lookandsay(a):
     l = []
     i = 0
     prev = a[0]
-    while i < len(a) - 1:
+    while i < len(a):
         if i == 0:
             count = 0
         else:
             count = 1
-        while a[i] == prev:
+        j = i
+        while a[j] == prev:
             count += 1
-            i += 1
-            if i + 1 == len(a):
+            j += 1
+            if j + 1 == len(a):
                 break
-        l.append((count, a[i]))
+        l.append((count, a[j]))
         i += 1
     return l
 
