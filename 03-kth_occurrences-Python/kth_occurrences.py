@@ -5,12 +5,14 @@
 
 def fun_kth_occurrences(s, n):
     s = s.strip()
-    d = {}
-    for i in set(s):
-        key = s.count(i)
-        if key in d:
-            d[key].append(i)
+    maxi = 0
+    lst = []
+    res = ''
+    for i in s:
+        if i != " " and i not in lst:
+            if s.count(i) >= maxi:
+                maxi = s.count(i)
+                res = i
         else:
-            d[key] = [i]
-    maxi = max(d.keys())
-    return d[maxi][0]
+            lst.append(i)
+    return res
