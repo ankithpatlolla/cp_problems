@@ -13,7 +13,7 @@ def shortenlongruns(L, k):
     # Your code goes here
     i = 0
     count = 1
-    prev = 0
+    prev = L[0]
     while i < len(L) - 1:
         if L[i] == prev:
             print(L[i])
@@ -21,7 +21,7 @@ def shortenlongruns(L, k):
                 print("IN")
                 return L[:i - 1] + L[i:]
             count += 1
-
+        prev = L[i]
         i += 1
 
 
