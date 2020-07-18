@@ -5,15 +5,16 @@
 
 def fun_kth_occurrences(s, n):
     s = s.strip()
-    d = {}
-    for i in set(s):
-        key = s.count(i)
-        if key in d:
-            d[key].append(i)
-        else:
-            d[key] = [i]
-    k = sorted(d, key=lambda x: x)
-    print(k)
+    l = []
+    for i in s:
+        if i not in l:
+            l.append((s.count(i), i))
+    l.sort(key=lambda x: x[0], reverse=True)
+    print(l)
+    try:
+        return l[n-1][1]
+    except:
+        return l[0][1]
 
 
-fun_kth_occurrences("england", 4)
+# print(fun_kth_occurrences("hello hyderabad a", 1))
