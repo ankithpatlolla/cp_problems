@@ -6,9 +6,8 @@
 def fun_alternatingsum(a):
     i = 0
     total = 0
-    while i < len(a) - 2:
+    while i < len(a) - 1:
         total += a[i]
-        i += 1
-        total -= a[i]
-        i += 1
+        total -= a[i + 1]
+        i += 2
     return total
