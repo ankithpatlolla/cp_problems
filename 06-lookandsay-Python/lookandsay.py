@@ -19,14 +19,15 @@ def lookandsay(a):
             count = 1
         j = i
         while a[j] == prev:
-            prev = a[j]
             count += 1
             j += 1
             if j + 1 == len(a):
                 break
+            prev = a[j]
+
         l.append((count, a[i]))
         i += 1
     return l
 
 
-# print(lookandsay([-1, 2, 7]))
+print(lookandsay([-1, 2, 7]))
