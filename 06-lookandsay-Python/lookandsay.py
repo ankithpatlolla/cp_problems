@@ -24,6 +24,3 @@ def lookandsay(a):
         l.append((count, a[i]))
         i += 1
     return l
-
-
-# print(lookandsay([-1, 2, 7, 7]))
