@@ -13,4 +13,4 @@ def fun_kth_occurrences(s, n):
         else:
             d[key] = [i]
     maxi = max(d.keys())
-    return d[n][0]
+    return d[maxi][0]
