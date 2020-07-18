@@ -19,3 +19,6 @@ def shortenlongruns(L, k):
                 return L[:i - k] + L[i:]
             count += 1
         i += 1
+
+
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
