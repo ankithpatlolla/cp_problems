@@ -21,4 +21,4 @@ def fun_wordwrap(s, n):
     res = ""
     for i in range(0, len(s) - (n - 1), n):
         res += '-'.join(s[i:i+n].split(" ")) + '\n'
-    return res
+    return res[:-1]
