@@ -19,10 +19,10 @@ def shortenlongruns(L, k):
             print(L[i])
             if count >= k:
                 print("IN")
-                return L[:i - 1] + L[i:]
+                return L[:i - 1] + L[i + k:]
             count += 1
         prev = L[i]
         i += 1
 
 
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
