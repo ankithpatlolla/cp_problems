@@ -23,8 +23,7 @@ def lookandsay(a):
             j += 1
             if j + 1 == len(a):
                 break
-            prev = a[j]
-        l.append((count, prev))
+        l.append((count, a[i]))
         i += 1
     return l
 
