@@ -7,7 +7,7 @@ def fun_kth_occurrences(s, n):
     s = s.strip()
     l = []
     for i in s:
-        if i not in l:
+        if ((s.count(i), i)) not in l and i != " ":
             l.append((s.count(i), i))
     l.sort(key=lambda x: x[0], reverse=True)
     print(l)
@@ -17,4 +17,4 @@ def fun_kth_occurrences(s, n):
         return l[0][1]
 
 
-# print(fun_kth_occurrences("hello hyderabad a", 1))
+print(fun_kth_occurrences("hsdibdouvbeiovbfeibvdsioubidsbvviefadbcildfab", 4))
