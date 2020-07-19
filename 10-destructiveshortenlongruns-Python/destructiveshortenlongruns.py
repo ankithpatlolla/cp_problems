@@ -16,7 +16,7 @@ def destructiveshortenlongruns(L, k):
     # Your code goes here
     count = 0
     prev = L[0]
-    i = 0
+    i = 1
     n = len(L)
     while i < len(L):
         j = i
