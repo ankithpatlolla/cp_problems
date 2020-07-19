@@ -16,20 +16,17 @@ def destructiveshortenlongruns(L, k):
     # Your code goes here
     count = 1
     prev = L[0]
-    i = 0
-    n = len(L)
-    while i < n:
-        j = i
-        while L[j] == prev:
-            print(j, count)
-            print(L)
-            if count == k:
-                L.pop(j)
-                print(L)
-                j -= 1
-                count -= 1
-            j += 1
+    i = 1
+    while i < len(L):
+        while L[i] == prev:
             count += 1
+            if count == k:
+                i -= 1
+                L.pop(i)
+                count -= 1
+            if i == len(L) - 1:
+                break
+            i += 1
         count = 1
         prev = L[i]
         i += 1
