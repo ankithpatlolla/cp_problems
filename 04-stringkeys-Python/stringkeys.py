@@ -23,7 +23,11 @@ class HashTable(object):
         string is already in the table.
         Return -1 otherwise."""
         # Your code goes here
-        pass
+        hv = self.calculate_hash_value(string)
+        if self.table[hv] != None:
+            if string in self.table[hv]:
+                return hv
+        return -1
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
