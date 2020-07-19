@@ -25,6 +25,8 @@ def destructiveshortenlongruns(L, k):
             print(L)
             if count == k:
                 L.pop(j)
+                print(L)
+                j -= 1
                 count -= 1
             j += 1
             count += 1
