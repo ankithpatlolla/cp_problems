@@ -18,7 +18,7 @@ def destructiveshortenlongruns(L, k):
     prev = L[0]
     i = 0
     n = len(L)
-    while i < len(L):
+    while i < n:
         j = i
         while L[j] == prev:
             print(j)
@@ -28,7 +28,7 @@ def destructiveshortenlongruns(L, k):
             count += 1
             if j + 1 == n:
                 break
-        count = 0
+        count = 1
         prev = L[i]
         i += 1
     return L
