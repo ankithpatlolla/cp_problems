@@ -17,10 +17,10 @@ def shortenlongruns(L, k):
     while i < len(L) - 1:
         if L[i] == L[i + 1]:
             count += 1
-            j = i
+            j = i + 1
         i += 1
         print(count, j, k)
-    return L[:j + 1 - (count - k)]
+    return L[:j - (count - k)] + L[j + 1:]
 
 
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
+# print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
