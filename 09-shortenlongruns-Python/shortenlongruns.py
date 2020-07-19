@@ -11,16 +11,23 @@
 
 def shortenlongruns(L, k):
     # Your code goes here
+    b = []
+    count = 0
     i = 0
-    count = 1
-    j = 0
-    while i < len(L) - 1:
-        if L[i] == L[i + 1]:
+    prev = L[0]
+    while i < len(L):
+        while L[i] == prev:
             count += 1
-            j = i + 1
+            if count < k:
+                b.append(L[i])
+            i += 1
+            if i == len(L) - 1:
+                break
+        coount = 0
+        b.append(L[i])
+        prev = L[i]
         i += 1
-        print(count, j, k)
-    return L[:j - (count - k)] + L[j + 1:]
+    return b
 
 
-# print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(shortenlongruns([2, 3, 5, 5, 5, 3, 2, 2, 2], 2))
