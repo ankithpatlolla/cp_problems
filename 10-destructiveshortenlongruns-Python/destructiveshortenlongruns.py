@@ -23,12 +23,11 @@ def destructiveshortenlongruns(L, k):
         while L[j] == prev:
             print(j, count)
             print(L)
-            if count >= k:
+            if count == k:
                 L.pop(j)
+                count -= 1
             j += 1
             count += 1
-            if j + 1 == n:
-                break
         count = 1
         prev = L[i]
         i += 1
