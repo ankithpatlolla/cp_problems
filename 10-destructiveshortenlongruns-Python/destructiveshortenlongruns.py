@@ -16,7 +16,7 @@ def destructiveshortenlongruns(L, k):
     # Your code goes here
     count = 0
     prev = L[0]
-    i = 1
+    i = 0
     n = len(L)
     while i < len(L):
         j = i
@@ -34,4 +34,4 @@ def destructiveshortenlongruns(L, k):
     return L
 
 
-print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 2))
+print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 3))
