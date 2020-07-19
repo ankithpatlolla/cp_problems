@@ -28,7 +28,6 @@ def destructiveshortenlongruns(L, k):
             j += 1
             if j + 1 == n:
                 break
-            # prev = L[j]
         count = 0
         prev = L[i]
         i += 1
