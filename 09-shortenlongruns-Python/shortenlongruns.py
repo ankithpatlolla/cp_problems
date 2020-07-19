@@ -23,4 +23,4 @@ def shortenlongruns(L, k):
     return L[:j + 1 - (count - k)]
 
 
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
