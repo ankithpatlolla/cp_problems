@@ -13,7 +13,7 @@ class HashTable(object):
         # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter
         # Your code goes here
         hv = self.calculate_hash_value(string)
-        if self.table[hv] != None:
+        if self.table[hv] == None:
             self.table[hv] = [string]
         else:
             self.table[hv].append(string)
