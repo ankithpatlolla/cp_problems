@@ -20,7 +20,7 @@ def shortenlongruns(L, k):
             j = i
         i += 1
         print(count, j, k)
-    return L[:j + 1 - (count - k)] + L[-1 - (count - k):]
+    return L[:j + 1 - (count - k)] + L[j:-1 - (count - k) + 1]
 
 
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
