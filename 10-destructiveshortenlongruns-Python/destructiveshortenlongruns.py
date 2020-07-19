@@ -33,4 +33,4 @@ def destructiveshortenlongruns(L, k):
     return L
 
 
-print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 2))
