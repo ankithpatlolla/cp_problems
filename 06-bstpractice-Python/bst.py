@@ -28,15 +28,22 @@ class BST(object):
         if self.root == None:
             return
         temp = self.root
-        while temp:
+        while temp != None:
             temp = temp.left
-            return(temp)
+            if temp == None:
+                return
+            print(temp)
+            if temp == None:
+                return
             temp = temp.right
 
     def search(self, find_val):
         # Your code goes here
         if find_val == None or type(find_val) != 'int':
             return False
+
+        if self.root.value == find_val:
+            return True
         temp = self.root
         while temp:
             if temp.value == find_val:
@@ -46,3 +53,11 @@ class BST(object):
             else:
                 temp = temp.right
         return False
+
+
+tree = BST(4)
+tree.insert(2)
+tree.insert(1)
+tree.insert(3)
+tree.insert(5)
+print(tree.root)
