@@ -42,7 +42,6 @@ class BST(object):
         # Your code goes here
         if find_val == None or type(find_val) != 'int':
             return False
-
         if self.root.value == find_val:
             return True
         temp = self.root
