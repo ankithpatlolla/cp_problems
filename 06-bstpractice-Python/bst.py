@@ -25,8 +25,22 @@ class BST(object):
 
     def printSelf(self):
         # Your code goes here
-        pass
+        temp = self.root
+        while temp:
+            temp = temp.left
+            print(temp)
+            temp = temp.right
 
     def search(self, find_val):
         # Your code goes here
-        pass
+        if find_val == None or type(find_val) != 'int':
+            return False
+        temp = self.root
+        while temp:
+            if temp.value == find_val:
+                return True
+            elif temp.value < find_val:
+                temp = temp.right
+            else:
+                temp = temp.right
+        return False
