@@ -33,7 +33,7 @@ class BST(object):
             temp = temp.left
             if temp == None:
                 return
-            print(temp.value)
+            print(temp)
             if temp == None:
                 return
             temp = temp.right
