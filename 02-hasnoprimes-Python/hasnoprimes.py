@@ -17,7 +17,7 @@ def is_prime(self, n):
 
 
 def fun_hasnoprimes(l):
-    for i in range(l):
+    for i in range(len(l)):
         if any(is_prime(l[i][j]) for j in range(len(l[i]))):
             return False
         return True
