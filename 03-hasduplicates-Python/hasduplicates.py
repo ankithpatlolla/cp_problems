@@ -8,7 +8,6 @@ def hasduplicates(L):
     a = []
     for i in range(len(L)):
         a.extend(L[i])
-    for i in range(len(a)):
-        if a.count(a[i]) < 1:
-            return False
-    return True
+    if (len(a)) != len(set(a)):
+        return True
+    return False
