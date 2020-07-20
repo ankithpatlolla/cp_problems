@@ -22,12 +22,12 @@ class BST(object):
             else:
                 temp = temp.left
         temp = Node(new_val)
-        print(temp.value)
+        # print(temp.value)
 
     def printSelf(self):
         # Your code goes here
         if self.root == None:
-            return
+            return -1
         temp = self.root
         while temp != None:
             temp = temp.left
@@ -60,4 +60,4 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(5)
-print(tree.search(2))
+print(tree.printSelf())
