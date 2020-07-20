@@ -56,7 +56,9 @@ class BST(object):
         # Your code goes here
         if find_val == None or type(find_val) != 'int':
             return False
-        return self.find(self.root, find_val)
+        if self.find(self.root, find_val):
+            return True
+        return False
 
 
 tree = BST(4)
