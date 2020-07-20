@@ -22,7 +22,7 @@ class BST(object):
             else:
                 temp = temp.left
         temp = Node(new_val)
-        # print(temp.value)
+        print(temp.value)
 
     def printSelf(self):
         # Your code goes here
