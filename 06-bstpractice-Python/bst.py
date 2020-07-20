@@ -30,7 +30,7 @@ class BST(object):
         temp = self.root
         while temp:
             temp = temp.left
-            print(temp)
+            return(temp)
             temp = temp.right
 
     def search(self, find_val):
