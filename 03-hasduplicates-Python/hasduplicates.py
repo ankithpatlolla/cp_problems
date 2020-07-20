@@ -8,11 +8,7 @@ def hasduplicates(L):
     a = []
     for i in range(len(L)):
         a.extend(L[i])
-    s = ''.join(map(str, a))
-    print(s)
-    if len(s) != len(set(s)):
-        return True
-    return False
-
-
-print(hasduplicates([[11, 2, 3], [1, 2, 3, 4]]))
+    for i in range(len(a)):
+        if a.count(a[i]) < 1:
+            return False
+    return True
