@@ -8,7 +8,7 @@ def hasduplicates(L):
     a = []
     for i in range(len(L)):
         a.extend(L[i])
-    s = ''.join(a)
+    s = ''.join(map(str, a))
     if len(str(s)) != len(set(str(s))):
         return True
     return False
