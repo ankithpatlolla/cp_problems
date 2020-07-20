@@ -3,10 +3,12 @@
 
 
 def is_prime(n):
-    if n <= 0 or n % 2 == 0 or n % 3 == 0:
+    if n <= 0:
         return False
     if n <= 3:
         return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
     else:
         i = 5
         while i * i <= n:
@@ -19,5 +21,5 @@ def is_prime(n):
 def fun_hasnoprimes(l):
     for i in range(len(l)):
         if any(is_prime(l[i][j]) for j in range(len(l[i]))):
-            return True
-    return False
+            return False
+    return True
