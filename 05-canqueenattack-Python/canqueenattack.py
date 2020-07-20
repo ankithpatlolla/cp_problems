@@ -10,6 +10,6 @@ def diff(x, y):
 
 def canqueenattack(qR, qC, oR, oC):
     # Your code goes here
-    if diff(qR, oR) == diff(qC, oC) or diff(qR, oR) == 1 or diff(qC, oC) == 1:
+    if diff(qR, oR) == diff(qC, oC) or (diff(qR, oR) == 1 and qC == oC) or (diff(qC, oC) == 1 and qR == oR):
         return True
-        return False
+    return False
