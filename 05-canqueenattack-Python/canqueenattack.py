@@ -12,3 +12,4 @@ def canqueenattack(qR, qC, oR, oC):
     # Your code goes here
     if diff(qR, oR) == diff(qC, oC) or diff(qR, oR) == 1 or diff(qC, oC) == 1:
         return True
+        return False
