@@ -17,12 +17,14 @@ class BST(object):
             if node.right == None:
                 node.right = Node(key)
                 return
-            self.add(node.right, key)
-        if node.value > key:
+            else:
+                self.add(node.right, key)
+        else:
             if node.left == None:
                 node.left = Node(key)
                 return
-            self.add(node.left, key)
+            else:
+                self.add(node.left, key)
 
     def insert(self, new_val):
         # Your code goes here
