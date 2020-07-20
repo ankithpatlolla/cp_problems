@@ -51,7 +51,7 @@ class BST(object):
             elif temp.value < find_val:
                 temp = temp.right
             else:
-                temp = temp.right
+                temp = temp.left
         return False
 
 
