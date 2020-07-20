@@ -9,6 +9,10 @@ def hasduplicates(L):
     for i in range(len(L)):
         a.extend(L[i])
     s = ''.join(map(str, a))
-    if len(str(s)) != len(set(str(s))):
+    print(s)
+    if len(s) != len(set(s)):
         return True
     return False
+
+
+print(hasduplicates([[11, 2, 3], [1, 2, 3, 4]]))
