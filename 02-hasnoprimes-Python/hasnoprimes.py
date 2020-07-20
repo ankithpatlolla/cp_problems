@@ -20,4 +20,4 @@ def fun_hasnoprimes(l):
     for i in range(len(l)):
         if any(is_prime(l[i][j]) for j in range(len(l[i]))):
             return False
-        return True
+    return True
