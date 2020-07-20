@@ -9,34 +9,32 @@ class BST(object):
     def __init__(self, root):
         self.root = Node(root)
 
+    def add(self, node, key):
+        if node == None:
+            node = Node(key)
+            return
+        if node.value < key:
+            self.add(node.right, key)
+        if node.value > key:
+            self.add(node.right, key)
+
     def insert(self, new_val):
         # Your code goes here
         if new_val == None:
             return
-        if self.root == None:
-            self.root = Node(new.val)
-        temp = self.root
-        while temp != None:
-            if temp.value < new_val:
-                temp = temp.right
-            else:
-                temp = temp.left
-        temp = Node(new_val)
-        # print(temp.value)
+        self.add(self.root, new_val)
+
+    def show(self, start):
+        while start != None:
+            print(start)
+            return self.show(start.left)
+            return self.show(start.right)
 
     def printSelf(self):
         # Your code goes here
         if self.root == None:
             return -1
-        temp = self.root
-        while temp != None:
-            temp = temp.left
-            if temp == None:
-                return
-            print(temp)
-            if temp == None:
-                return
-            temp = temp.right
+        self.show(self.root)
 
     def search(self, find_val):
         # Your code goes here
