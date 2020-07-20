@@ -45,7 +45,7 @@ class BST(object):
         if self.root.value == find_val:
             return True
         temp = self.root
-        while temp:
+        while temp != None:
             if temp.value == find_val:
                 return True
             elif temp.value < find_val:
@@ -60,4 +60,4 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(5)
-print(tree.search(5))
+print(tree.search(4))
