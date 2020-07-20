@@ -25,6 +25,8 @@ class BST(object):
 
     def printSelf(self):
         # Your code goes here
+        if self.root == None:
+            return
         temp = self.root
         while temp:
             temp = temp.left
