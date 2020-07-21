@@ -9,27 +9,27 @@ class BST(object):
     def __init__(self, root):
         self.root = Node(root)
 
-    def add(self, root, val):
-        if root == None:
-            root = Node(val)
+    def insert(self, new_val):
+        # Your code goes
+        if self.root == None:
+            self.root = Node(new_val)
             return
+        root = self.root
         while True:
-            if root.value < val:
+            if root.value < new_val:
                 if root.right == None:
-                    root.right = Node(val)
-                    return
+                    root.right = Node(new_val)
+                    break
                 else:
                     root = root.right
-            elif root.value > val:
+            elif root.value > new_val:
                 if root.left == None:
-                    root.left = Node(root)
-                    return
+                    root.left = Node(new_val)
+                    break
                 else:
                     root = root.left
-
-    def insert(self, new_val):
-        # Your code goes here
-        self.add(self.root, new_val)
+            else:
+                break
 
     def print_bst(self, root):
         if root == None:
