@@ -21,11 +21,13 @@ def top2(l, a, b):
         a = x
     if b <= a:
         b = a
+    if x <= b <= a:
+        prev = x
     return top2(l, a, b)
 
 
 def recursion_secondlargest(L):
     # Your code goes here
-    if len(L) == 1 or not L:
+    if L == [] or len(L) == 1:
         return None
     return top2(L, L[0], L[0])
