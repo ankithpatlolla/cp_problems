@@ -39,4 +39,4 @@ def recursion_secondlargest(L):
     return top2(L, L[0], a)
 
 
-# print(recursion_secondlargest([-3, -4, -6, -2]))
+print(recursion_secondlargest([-3, -4]))
