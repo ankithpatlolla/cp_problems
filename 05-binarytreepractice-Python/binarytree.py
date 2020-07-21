@@ -41,6 +41,6 @@ class BinaryTree(object):
         recursive print solution."""
         # Your code goes here
         if start:
-            self.preorder_print(start.left, 'preorder')
             print(start)
+            self.preorder_print(start.left, 'preorder')
             self.preorder_print(start.right, 'preorder')
