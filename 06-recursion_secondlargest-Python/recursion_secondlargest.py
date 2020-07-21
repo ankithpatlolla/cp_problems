@@ -13,7 +13,7 @@
 # Again, you do not need to sort the list. We didn't sort it in our sample solution. We just tracked the two largest
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 def maxi(l, x, i):
-    if i == len(l):
+    if i == len(l) - 1:
         return x
     if l[i] > x:
         x = l[i]
@@ -26,7 +26,7 @@ def top2(l, a, b):
     if l[0] < b and a < l[0]:
         a = l[0]
     l.pop(0)
-    print(a, l)
+    # print(a, l)
     return top2(l, a, b)
 
 
@@ -34,9 +34,9 @@ def recursion_secondlargest(L):
     # Your code goes here
     if len(L) < 2:
         return None
-    a = maxi(L, L[0], 0)
-    print(a)
+    a = maxi(L, L[0], L[0])
+    # print(a)
     return top2(L, L[0], a)
 
 
-print(recursion_secondlargest([1, 2, 3, 4, 5]))
+# print(recursion_secondlargest([-3, -4, -6, -2]))
