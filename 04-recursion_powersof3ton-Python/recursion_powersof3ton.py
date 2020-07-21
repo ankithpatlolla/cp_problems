@@ -4,9 +4,10 @@
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem.
 
 def powers(n, l, p):
-    if p ** 2 >= n or p <= 0:
-        return l
-    l.append(p ** 2)
+    k = p ** 2
+    if n <= 0:
+        return None
+    l.append(k)
     return (n, l, p + 2)
 
 
