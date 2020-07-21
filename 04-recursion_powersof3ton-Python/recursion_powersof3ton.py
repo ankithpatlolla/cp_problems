@@ -7,6 +7,8 @@ def powers(n, l, p):
     k = p ** 2
     if n <= 0:
         return None
+    if k >= n:
+        return l
     l.append(k)
     return (n, l, p + 2)
 
