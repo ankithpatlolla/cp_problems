@@ -15,7 +15,7 @@
 def maxi(l, x, i):
     if i == len(l):
         return x
-    if l[i] >= x:
+    if l[i] > x:
         x = l[i]
     return maxi(l, x, i + 1)
 
@@ -34,4 +34,8 @@ def recursion_secondlargest(L):
     if len(L) < 2:
         return None
     a = maxi(L, L[0], 0)
+    print(a)
     return top2(L, L[0], a)
+
+
+print(recursion_secondlargest([1, 2, 3, 4, 5]))
