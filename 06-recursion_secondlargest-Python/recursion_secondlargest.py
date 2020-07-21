@@ -23,8 +23,8 @@ def maxi(l, x, i):
 def top2(l, a, b):
     if len(l) < 1:
         return a
-    if a < b:
-        a = b
+    if l[0] < b and a > l[0]:
+        a = l[0]
     l.pop(0)
     print(a, l)
     return top2(l, a, b)
