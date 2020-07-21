@@ -19,10 +19,10 @@
 
 
 def binary_search(l, v, low, high, res):
+    if low > high:
+        return res
     mid = low + (high - low) // 2
     res.append((mid, l[mid]))
-    if low > high:
-        return
     if l[mid] == v:
         return res
     elif l[mid] < v:
