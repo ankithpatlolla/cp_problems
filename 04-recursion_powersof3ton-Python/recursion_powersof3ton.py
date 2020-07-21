@@ -6,11 +6,10 @@
 
 def powers(n, l, p):
     k = 3 ** p
-    if n <= 0:
+    if n < 1:
         return None
-    if k >= n:
+    if k > n:
         return l
-
     l.append(k)
     return powers(n, l, p + 1)
 
