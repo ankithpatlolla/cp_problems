@@ -5,14 +5,13 @@
 
 
 def alt(l, i, total):
-    if not l or i < len(l):
+    if not l or i == len(l):
         return total
     if i % 2 == 0:
         total += l[i]
     else:
         total -= l[i]
-    # l.pop(i)
-    alt(l, i + 1, total)
+    return alt(l, i + 1, total)
 
 
 def fun_recursions_alternatingsum(l):
