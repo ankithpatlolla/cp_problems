@@ -21,12 +21,14 @@
 def binary_search(l, v, low, high, res):
     mid = low + (high - low) // 2
     res.append((mid, l[mid]))
-    if l[mid] == v or low > high:
+    if low > high:
+        return
+    if l[mid] == v:
         return res
     elif l[mid] < v:
         return binary_search(l, v, mid + 1, high, res)
     else:
-        return binary_search(l, v, low, mid + 1, res)
+        return binary_search(l, v, low, mid - 1, res)
 
 
 def recursion_binarysearchvalues(L, v):
