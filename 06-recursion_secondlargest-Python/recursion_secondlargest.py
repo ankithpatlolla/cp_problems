@@ -21,12 +21,13 @@ def maxi(l, x, i):
 
 
 def top2(l, a, b):
-    if l == []:
+    if len(l) < 1:
         return a
     if a < b and a >= l[0]:
         a = b
     l.pop(0)
-    return (l, a, b)
+    print(a, l)
+    return top2(l, a, b)
 
 
 def recursion_secondlargest(L):
