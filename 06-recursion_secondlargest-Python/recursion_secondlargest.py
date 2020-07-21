@@ -35,8 +35,8 @@ def recursion_secondlargest(L):
     if len(L) < 2:
         return None
     a = maxi(L, L[0], 0)
-    # print(a)
+    print(a)
     return top2(L, L[0], a)
 
 
-# print(recursion_secondlargest([-3, -4, -6, -2]))
+print(recursion_secondlargest([-3, -4, -6, -2]))
