@@ -9,7 +9,7 @@ import numpy as np
 def fun_matrixmultiply(m1, m2):
     if len(m1[0]) != len(m2):
         return None
-    l = []
+    l = [[0] * len(m1)] * len(m2[0])
     # for i in range(len(m1)):
     #     a = []
     #     for j in range(len(m2[0])):
@@ -19,4 +19,5 @@ def fun_matrixmultiply(m1, m2):
     #         a.append(r)
     #     l.append(a)
     # return l
-    return np.dot(m1, m2)
+    l = np.dot(m1, m2)
+    return l
