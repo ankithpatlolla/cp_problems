@@ -4,16 +4,16 @@
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem.
 
 def powers(n, l, p):
-    k = p ** 2
+    k = 3 ** p
     if n <= 0:
         return None
     if k >= n:
         return l
-    if p:
-        l.append(k)
-    return powers(n, l, p + 3)
+
+    l.append(k)
+    return powers(n, l, p + 1)
 
 
 def recursion_powersof3ton(n):
     # Your code goes here
-    return powers(n, [1], 0)
+    return powers(n, [], 0)
