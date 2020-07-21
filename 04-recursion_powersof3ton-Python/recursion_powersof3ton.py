@@ -9,7 +9,8 @@ def powers(n, l, p):
         return None
     if k >= n:
         return l
-    l.append(k)
+    if p:
+        l.append(k)
     return powers(n, l, p * 2 + 1)
 
 
