@@ -31,7 +31,7 @@ def top2(l, a, b):
 
 def recursion_secondlargest(L):
     # Your code goes here
-    if len(L) < 1:
+    if len(L) < 2:
         return None
     a = maxi(L, L[0], 0)
     return top2(L, L[0], a)
