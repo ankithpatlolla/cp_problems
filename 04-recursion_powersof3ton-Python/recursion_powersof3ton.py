@@ -11,9 +11,9 @@ def powers(n, l, p):
         return l
     if p:
         l.append(k)
-    return powers(n, l, p * 2 + 1)
+    return powers(n, l, p + 3)
 
 
 def recursion_powersof3ton(n):
     # Your code goes here
-    return powers(n, [], 0)
+    return powers(n, [1], 0)
