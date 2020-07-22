@@ -15,7 +15,7 @@ def longestdigitrun(n):
         i = n % 10
         if i == prev:
             c += 1
-            if c >= maxi:
+            if c > maxi:
                 maxi = c
                 most = i
         else:
