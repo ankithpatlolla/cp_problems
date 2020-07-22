@@ -26,6 +26,5 @@ def nthwithproperty309(n):
             if c == n:
                 break
             c += 1
-
         i += 1
     return i
