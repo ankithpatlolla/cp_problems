@@ -23,10 +23,10 @@ def longestdigitrun(n):
             prev = i
             k.append(i)
         n //= 10
-    print(l)
+    # print(l)
     if maxi == 0:
         return min(k)
     return min(l)
 
 
-print(longestdigitrun(11166777888333222))
+# print(longestdigitrun(11166777888333222))
