@@ -7,21 +7,6 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    if n <= 3:
-        return True
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-    i = 5
-    while (i * i) <= n:
-        if n % i == 0 or n % (i + 2) == 0:
-            return False
-        i += 6
-    return True
-
-
 def total(l, s):
     if len(l) == 0:
         return s
@@ -36,17 +21,17 @@ def total(l, s):
 
 
 def is_smith(n):
-    if is_prime(n):
-        return False
     i = 2
     l = []
-    while i < n:
-        if is_prime(i) and n % i == 0:
+    while n % 2 == 0:
+        l.append(2)
+        n = n / 2
+    for i in range(3, n):
+        while n % i == 0:
             l.append(i)
-        if i * i == n:
-            l.append(i)
-        i += 1
-    # print(l)
+            n = n / i
+    if n > 2:
+        l.append(n)
     c = total(l, 0)
     num = 0
     while n > 0:
