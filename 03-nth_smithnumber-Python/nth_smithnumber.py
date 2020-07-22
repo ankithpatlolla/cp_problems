@@ -51,6 +51,7 @@ def is_smith(n):
     if n > 2:
         l.append(n)
     c = total(l, 0)
+    print(c)
     num = 0
     while n > 0:
         num += n % 10
