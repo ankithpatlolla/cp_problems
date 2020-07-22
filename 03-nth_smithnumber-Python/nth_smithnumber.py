@@ -56,6 +56,7 @@ def is_smith(n):
     while n > 0:
         num += n % 10
         n //= 10
+    print(num)
     if c == num:
         return True
     return False
