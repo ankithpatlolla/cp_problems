@@ -52,12 +52,12 @@ def is_smith(n):
     if x > 2:
         l.append(x)
     c = total(l, 0)
-    print(c)
+    # print(c)
     num = 0
     while n > 0:
         num += n % 10
         n //= 10
-    print(num)
+    # print(num)
     if c == num:
         return True
     return False
@@ -75,5 +75,5 @@ def fun_nth_smithnumber(n):
     return i
 
 
-print(is_smith(27))
+# print(is_smith(27))
 # print(fun_nth_smithnumber(3))
