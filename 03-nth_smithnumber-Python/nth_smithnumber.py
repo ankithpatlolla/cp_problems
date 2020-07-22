@@ -46,7 +46,7 @@ def is_smith(n):
         if i * i == n:
             l.append(i)
         i += 1
-    print(l)
+    # print(l)
     c = total(l, 0)
     num = 0
     while n > 0:
@@ -69,4 +69,4 @@ def fun_nth_smithnumber(n):
     return i
 
 
-print(is_smith(22))
+# print(is_smith(22))
