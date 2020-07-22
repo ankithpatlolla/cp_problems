@@ -19,6 +19,7 @@ def is_prime(n):
         if n % i == 0 or n % (i + 2) == 0:
             return False
         i += 6
+    return True
 
 
 def total(l, s):
@@ -35,6 +36,8 @@ def total(l, s):
 
 
 def is_smith(n):
+    if is_prime(n):
+        return False
     i = 2
     l = []
     while i < n:
@@ -52,8 +55,6 @@ def is_smith(n):
 
 
 def fun_nth_smithnumber(n):
-    if is_prime(n):
-        return
     k = 0
     if n == 0:
         return 4
