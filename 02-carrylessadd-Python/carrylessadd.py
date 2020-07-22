@@ -12,14 +12,10 @@ def fun_carrylessadd(x, y):
     while x > 0 or y > 0:
         r1, r2 = x % 10, y % 10
         print(r1, r2, "rems")
-        if r1 + r2 < 10:
-            res += 10 * (r1 + r2) + res
-            print(res)
-        else:
-            res += 10 * ((r1 + r2) % 10) + res
-            print(res, "in else")
+        res += 10 * ((r1 + r2) % 10)
+        print(res, "in else")
         x, y = x // 10, y // 10
     return res
 
 
-print(fun_carrylessadd(99, 1))
+print(fun_carrylessadd(785, 376))
