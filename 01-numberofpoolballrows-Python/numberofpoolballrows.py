@@ -9,7 +9,7 @@
 def row(balls, n, c):
     x = (n * (n + 1)) // 2
     y = ((n - 1)(n)) // 2
-    if y < balls <= x:
+    if y < balls and balls <= x:
         return c
     return row(balls, n + 1, c + 1)
 
