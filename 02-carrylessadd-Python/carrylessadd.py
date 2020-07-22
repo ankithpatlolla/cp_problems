@@ -9,9 +9,9 @@ def fun_carrylessadd(x, y):
     res = ""
     if y == 0:
         return x
-    while x > 0 and y > 0:
+    while x > 0 or y > 0:
         r1, r2 = x % 10, y % 10
-        print(r1, r1, "rems")
+        print(r1, r2, "rems")
         if r1 + r2 < 10:
             res += str(r1 + r2)
             print(res)
