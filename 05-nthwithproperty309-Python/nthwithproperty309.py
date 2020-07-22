@@ -23,8 +23,9 @@ def nthwithproperty309(n):
     i = 309
     while True:
         if is_prop360(i):
-            c += 1
             if c == n:
                 break
+            c += 1
+
         i += 1
     return i
