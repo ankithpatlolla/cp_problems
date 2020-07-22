@@ -38,7 +38,6 @@ def is_prime(n):
 def is_smith(n):
     if is_prime(n):
         return False
-    i = 2
     l = []
     while n % 2 == 0:
         l.append(2)
