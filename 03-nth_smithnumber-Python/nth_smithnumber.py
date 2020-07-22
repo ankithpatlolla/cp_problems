@@ -6,6 +6,8 @@
 # counted twice, thus making 4 a Smith Number.
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
+import math
+
 
 def total(l, s):
     if len(l) == 0:
@@ -42,7 +44,7 @@ def is_smith(n):
     while n % 2 == 0:
         l.append(2)
         n = n // 2
-    for i in range(3, n, 2):
+    for i in range(3, int(math.sqrt(n) + 1), 2):
         while n % i == 0:
             l.append(i)
             n = n // i
