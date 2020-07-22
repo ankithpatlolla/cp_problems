@@ -16,7 +16,7 @@ def fun_carrylessadd(x, y):
             res += r1 + r2
             # print(res)
         else:
-            res += 10 * res + ((r1 + r2) % 10)
+            res = 10 * ((r1 + r2) % 10) + res
             # print(res, "in else")
         x, y = x // 10, y // 10
     return res
