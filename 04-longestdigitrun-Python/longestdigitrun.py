@@ -11,7 +11,7 @@ def longestdigitrun(n):
     maxi = 0
     prev = 0
     c = 0
-    l = []
+    l, k = [], []
     while n > 0:
         i = n % 10
         if i == prev:
@@ -22,6 +22,12 @@ def longestdigitrun(n):
         else:
             c = 1
             prev = i
+            k.append(i)
         n //= 10
     print(l)
+    if maxi == 0:
+        return min(k)
     return min(l)
+
+
+print(longestdigitrun(12345))
