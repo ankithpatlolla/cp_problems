@@ -30,4 +30,4 @@ def longestdigitrun(n):
     return min(l)
 
 
-print(longestdigitrun(12345))
+print(longestdigitrun(771178726473333))
