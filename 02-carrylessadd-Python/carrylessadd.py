@@ -19,7 +19,7 @@ def fun_carrylessadd(x, y):
             res += 10 * res + ((r1 + r2) % 10)
             # print(res, "in else")
         x, y = x // 10, y // 10
-    return int(res[::-1])
+    return res
 
 
 # print(fun_carrylessadd(99, 1))
