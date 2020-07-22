@@ -23,4 +23,5 @@ def longestdigitrun(n):
             c = 1
             prev = i
         n //= 10
+    print(l)
     return min(l)
