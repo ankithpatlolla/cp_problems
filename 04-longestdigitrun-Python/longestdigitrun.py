@@ -9,14 +9,13 @@ def longestdigitrun(n):
     n = abs(n)
     most = 0
     maxi = 0
-    prev = n % 10
-    n //= 10
+    prev = 0
     c = 1
     while n > 0:
         i = n % 10
         if i == prev:
             c += 1
-            if c >= maxi and most > i:
+            if c >= maxi:
                 maxi = c
                 most = i
         else:
