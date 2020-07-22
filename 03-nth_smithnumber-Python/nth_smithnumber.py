@@ -41,15 +41,16 @@ def is_smith(n):
     if is_prime(n):
         return False
     l = []
-    while n % 2 == 0:
+    x = n
+    while x % 2 == 0:
         l.append(2)
-        n = n // 2
-    for i in range(3, int(math.sqrt(n) + 1), 2):
-        while n % i == 0:
+        x = x // 2
+    for i in range(3, int(math.sqrt(x) + 1), 2):
+        while x % i == 0:
             l.append(i)
-            n = n // i
-    if n > 2:
-        l.append(n)
+            x = x // i
+    if x > 2:
+        l.append(x)
     c = total(l, 0)
     print(c)
     num = 0
