@@ -6,22 +6,21 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
     # Your code goes here
+    n = abs(n)
     most = 0
     maxi = 0
-    first, prev = n % 10, n % 10
+    prev = n % 10
     n //= 10
     c = 1
     while n > 0:
         i = n % 10
         if i == prev:
             c += 1
-            if c > maxi:
+            if c >= maxi and most < i:
                 maxi = c
                 most = i
         else:
             c = 1
             prev = i
         n //= 10
-    if c == 1:
-        return first
     return most
