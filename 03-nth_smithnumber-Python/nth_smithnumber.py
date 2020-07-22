@@ -40,7 +40,7 @@ def is_smith(n):
     while i < n:
         if is_prime(i) and n % i == 0:
             l.append(i)
-            
+        i += 1
     c = total(l, 0)
     num = 0
     while n > 0:
