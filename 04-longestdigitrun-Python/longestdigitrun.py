@@ -7,7 +7,6 @@
 def longestdigitrun(n):
     # Your code goes here
     n = abs(n)
-    # most = 0
     maxi = 0
     prev = 0
     c = 0
@@ -30,4 +29,4 @@ def longestdigitrun(n):
     return min(l)
 
 
-print(longestdigitrun(771178726473333))
+print(longestdigitrun(11166777888333222))
