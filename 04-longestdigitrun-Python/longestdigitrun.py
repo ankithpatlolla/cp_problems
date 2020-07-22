@@ -8,7 +8,7 @@ def longestdigitrun(n):
     # Your code goes here
     most = 0
     maxi = 0
-    first, prev = n % 10
+    first, prev = n % 10, n % 10
     n //= 10
     c = 1
     while n > 0:
