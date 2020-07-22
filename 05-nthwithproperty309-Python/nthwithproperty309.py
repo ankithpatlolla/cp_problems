@@ -19,12 +19,12 @@ def is_prop360(n):
 
 def nthwithproperty309(n):
     # Your code goes here
-    c = 0
+    c = -1
     i = 309
     while True:
         if is_prop360(i):
+            c += 1
             if c == n:
                 break
-            c += 1
         i += 1
     return i
