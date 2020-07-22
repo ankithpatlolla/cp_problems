@@ -7,13 +7,15 @@
 
 def fun_carrylessadd(x, y):
     res = 0
+    c = 0
     if y == 0:
         return x
     while x > 0 or y > 0:
         r1, r2 = x % 10, y % 10
-        res += 10 * res + ((r1 + r2) % 10)
+        res += ((r1 + r2) % 10) * (10 ** c)
         print(res, "in else")
         x, y = x // 10, y // 10
+        c += 1
     return res
 
 
