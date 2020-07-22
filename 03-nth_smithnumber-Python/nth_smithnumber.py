@@ -69,4 +69,4 @@ def fun_nth_smithnumber(n):
     return i
 
 
-print(fun_nth_smithnumber(1))
+print(fun_nth_smithnumber(0))
