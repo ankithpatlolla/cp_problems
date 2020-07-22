@@ -7,19 +7,20 @@
 def longestdigitrun(n):
     # Your code goes here
     n = abs(n)
-    most = 0
+    # most = 0
     maxi = 0
     prev = 0
-    c = 1
+    c = 0
+    l = []
     while n > 0:
         i = n % 10
         if i == prev:
             c += 1
             if c >= maxi:
                 maxi = c
-                most = i
+                l.append(i)
         else:
             c = 1
             prev = i
         n //= 10
-    return most
+    return min(l)
