@@ -13,6 +13,7 @@ def fun_carrylessadd(x, y):
         r1, r2 = x % 10, y % 10
         if r1 + r2 < 10:
             res += str(r1 + r2)
-        res += str((r1 + r2) % 10)
+        if (r1 + r2) % 10 != 0:
+            res += str((r1 + r2) % 10)
         x, y = x // 10, y // 10
     return int(res)
