@@ -55,6 +55,8 @@ def fun_nth_smithnumber(n):
     if is_prime(n):
         return
     k = 0
+    if n == 0:
+        return 4
     i = 2
     while True:
         if is_smith(i):
