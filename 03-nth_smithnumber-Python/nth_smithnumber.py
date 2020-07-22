@@ -57,7 +57,7 @@ def fun_nth_smithnumber(n):
     k = 0
     if n == 0:
         return 4
-    i = 2
+    i = 4
     while True:
         if is_smith(i):
             k += 1
