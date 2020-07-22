@@ -7,6 +7,8 @@
 
 def fun_carrylessadd(x, y):
     res = ""
+    if y == 0:
+        return x
     while x > 0 and y > 0:
         r1, r2 = x % 10, y % 10
         if r1 + r2 < 10:
