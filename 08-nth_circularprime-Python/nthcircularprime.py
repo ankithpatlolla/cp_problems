@@ -32,7 +32,8 @@ def is_circular(n):
         if n % 10 == 0:
             return False
         num = ((n % k) * 10) + n // k
-        print(num, "num******************")
+        if num == n:
+            return False
         if not is_prime(num):
             return False
         n = num
