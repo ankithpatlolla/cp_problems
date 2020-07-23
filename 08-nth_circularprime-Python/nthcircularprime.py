@@ -32,7 +32,6 @@ def is_circular(n):
         if n % 10 == 0:
             return False
         num = ((n * 10) + rem - (rem * k * 10))
-        print(num, "**********************", n)
         if n == num or is_prime(num) == False:
             return False
         n = num
@@ -50,5 +49,5 @@ def nthcircularprime(n):
     return i
 
 
-print(is_circular(19))
+# print(is_circular(19))
 # print(nthcircularprime(5))
