@@ -6,7 +6,7 @@
 # note that 197 is prime, as is 971 (rotated left), as is 719 (rotated left again)....
 
 def is_prime(n):
-    if n <= 1:
+    if n < 2:
         return False
     if n <= 3:
         return True
