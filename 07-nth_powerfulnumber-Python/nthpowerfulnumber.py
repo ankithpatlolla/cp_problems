@@ -27,7 +27,7 @@ def primes(n, l):
 
 
 def is_powerful(n):
-    l = primes(n, [])
+    l = primes(n, [1])
     for i in l:
         if n % (i * i) != 0:
             return False
@@ -36,7 +36,7 @@ def is_powerful(n):
 
 def nthpowerfulnumber(n):
     # Your code goes here
-    i = 0
+    i = 1
     c = 0
     while True:
         if is_powerful(i):
