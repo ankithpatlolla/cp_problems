@@ -14,8 +14,8 @@ def is_kap(n):
     num = n ** 2
     k = 0
     while num // (10 ** k) != 0:
-        a = num % (10 ** k)
         b = num // (10 ** k)
+        a = num % (10 ** k)
         if a != 0 and a + b == n:
             return True
         k += 1
