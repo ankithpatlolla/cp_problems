@@ -8,29 +8,11 @@
 # Hint: you may need to generate only Carol numbers, and then test those as you go
 # for primality (and you may need to think about that hint for a while for it to make sense!).
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    if n <= 3:
-        return True
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-    i = 5
-    while i * i <= n:
-        if n % i == 0 or n % (i + 2) == 0:
-            return False
-        i += 6
-    return True
-
-
 def fun_nth_carolprime(n):
-    i = 2
+    i = 0
     x = 0
-    if n == 0:
-        return 7
-    while n > 0:
+    while n != -1:
         i += 1
         x = ((2 ** i - 1) ** 2) - 2
-        if is_prime(x):
-            n -= 1
+        n -= 1
     return x
