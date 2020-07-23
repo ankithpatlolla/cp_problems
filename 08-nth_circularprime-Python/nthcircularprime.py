@@ -51,4 +51,4 @@ def nthcircularprime(n):
 
 
 print(is_circular(19))
-print(nthcircularprime(5))
+# print(nthcircularprime(5))
