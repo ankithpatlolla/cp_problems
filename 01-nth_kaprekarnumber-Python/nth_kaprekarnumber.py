@@ -4,8 +4,7 @@
 # 45**2 = 2025 and 20+25 = 45. You can read more about Kaprekar numbers here. The first several
 # Kaprekar numbers are: 1, 9, 45, 55, 99, 297, 703, 999 , 2223, 2728,...
 # With this in mind, write the function nthKaprekarNumber(n) that takes a non-negative int n
-# and returns the nth Kaprekar number, where as usual we start counting at n==0.
-
+# and returns the nth Kaprekar number, where as usual we start counting at n==0..
 
 import math
 
