@@ -31,7 +31,3 @@ def fun_nth_kaprekarnumber(n):
         if is_kap(i):
             n -= 1
     return i
-
-
-# print(is_kap(100))
-# print(fun_nth_kaprekarnumber(5))
