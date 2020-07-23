@@ -39,7 +39,7 @@ def is_happy(n):
     if n == 0 or n == 4:
         return False
     while True:
-        check = sumOfSquaresOfDigits(n * n)
+        check = sumOfSquaresOfDigits(n)
         return is_happy(check)
 
 
