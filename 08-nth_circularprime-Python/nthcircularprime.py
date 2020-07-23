@@ -24,14 +24,18 @@ def is_circular(n):
     if not is_prime(n):
         return False
     num = 0
-    while n > 0:
-        rem = n % 10
-        if rem == 0:
+    digits = len(str(n))
+    k = 10 ** (digits - 1)
+    i = 0
+    while i < digits - 1:
+        rem = n // k
+        if n % 10 == 0:
             return False
-        num = num * 10 + rem
-        n //= 10
-    if not is_prime(num):
-        return False
+        num = ((n * 10) + rem - (rem * k * 10))
+        if not is_prime(num):
+            return False
+        n = num
+        i += 1
     return True
 
 
