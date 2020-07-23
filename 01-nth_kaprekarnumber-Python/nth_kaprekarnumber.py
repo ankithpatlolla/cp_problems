@@ -31,4 +31,5 @@ def fun_nth_kaprekarnumber(n):
     return i
 
 
-print(is_kap(5050))
+# print(is_kap(5050))
+print(fun_nth_kaprekarnumber(5))
