@@ -9,7 +9,7 @@
 # for primality (and you may need to think about that hint for a while for it to make sense!).
 
 def fun_nth_carolprime(n):
-    i = 0
+    i = 1
     x = 0
     while n != -1:
         i += 1
