@@ -32,7 +32,7 @@ def is_circular(n):
         if n % 10 == 0:
             return False
         num = ((n * 10) + rem - (rem * k * 10))
-        print(num, "**********************")
+        print(num, "**********************", n)
         if n == num or not is_prime(num):
             return False
         n = num
