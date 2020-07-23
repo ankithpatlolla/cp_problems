@@ -15,6 +15,7 @@ def is_prime(n):
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
+        i += 6
     return True
 
 
