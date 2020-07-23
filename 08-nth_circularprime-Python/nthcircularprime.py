@@ -48,3 +48,6 @@ def nthcircularprime(n):
         if is_circular(i):
             n -= 1
     return i
+
+
+print(nthcircularprime(5))
