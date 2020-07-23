@@ -47,7 +47,3 @@ def nthcircularprime(n):
         if is_circular(i):
             n -= 1
     return i
-
-
-# print(is_circular(19))
-# print(nthcircularprime(5))
