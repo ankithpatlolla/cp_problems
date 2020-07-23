@@ -28,6 +28,12 @@ def is_prime(n):
 def is_leftprime(n):
     if not is_prime(n):
         return False
+    k = 1
+    while n // (10 ** k) > 0:
+        rem = n % (10 ** k)
+        if not is_prime(rem):
+            return False
+    return True
 
 
 def fun_nth_lefttruncatableprime(n):
