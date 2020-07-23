@@ -21,7 +21,7 @@ def is_prime(n):
 
 
 def is_circular(n):
-    if not is_prime(n):
+    if is_prime(n) == False:
         return False
     num = 0
     digits = len(str(n))
