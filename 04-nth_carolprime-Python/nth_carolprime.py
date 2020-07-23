@@ -26,6 +26,8 @@ def is_prime(n):
 def fun_nth_carolprime(n):
     i = 2
     x = 0
+    if n == 0:
+        return 7
     while n > 0:
         i += 1
         x = ((2 ** i - 1) ** 2) - 2
