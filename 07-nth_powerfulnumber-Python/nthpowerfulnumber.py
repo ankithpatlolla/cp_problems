@@ -15,7 +15,7 @@ def primes(x, l):
             x = x // i
     if x > 2:
         l.append(x)
-        return l
+    return l
 
 
 def is_powerful(n):
