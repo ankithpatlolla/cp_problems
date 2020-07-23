@@ -26,7 +26,7 @@ def is_prime(n):
 
 def is_leftprime(n):
     while n > 0:
-        rem = n % 10
+        rem = n // 10
         if not is_prime(rem):
             return False
         n //= 10
