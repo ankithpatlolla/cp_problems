@@ -25,8 +25,8 @@ def is_kap(n):
 def fun_nth_kaprekarnumber(n):
     if n == 0:
         return 1
-    i = 2
-    while n >= 0:
+    i = 8
+    while n > 0:
         i += 1
         if is_kap(i):
             n -= 1
