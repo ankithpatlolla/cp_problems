@@ -9,7 +9,7 @@ def primes(x, l):
     while x % 2 == 0:
         l.append(2)
         x = x // 2
-    for i in range(3, int(math.sqrt(x) + 1), 2):
+    for i in range(3, int((x * 0.5) + 1), 2):
         while x % i == 0:
             l.append(i)
             x = x // i
