@@ -7,13 +7,14 @@
 def is_lychreal(n):
     res = 0
     x = n
-    while n > 0:
-        rem = n % 10
-        res = 10 * res + rem
-        n //= 10
-    res += x
-    if str(res) == str(res)[::-1]:
-        return False
+    for i in range(25):
+        while n > 0:
+            rem = n % 10
+            res = 10 * res + rem
+            n //= 10
+        res += x
+        if str(res) == str(res)[::-1]:
+            return False
     return True
 
 
@@ -27,4 +28,4 @@ def nthlychrelnumbers(n):
     return i
 
 
-print(nthlychrelnumbers(1))
+print(nthlychrelnumbers(2))
