@@ -6,7 +6,9 @@
 
 def is_automorphic(n):
     x = n * n
-    if x % 10 == n % 10:
+    digits = len(str(n))
+    k = 10 ** digits
+    if x % k == n:
         return True
     return False
 
