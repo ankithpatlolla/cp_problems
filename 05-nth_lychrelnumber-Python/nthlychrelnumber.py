@@ -6,12 +6,13 @@
 
 def is_lychreal(n):
     res = 0
+    x = n
     while n > 0:
         rem = n % 10
         res = 10 * res + rem
         n //= 10
     print(res, "before")
-    res += n
+    res = res + x
     print(res)
     if str(res) == str(res)[::-1]:
         return False
