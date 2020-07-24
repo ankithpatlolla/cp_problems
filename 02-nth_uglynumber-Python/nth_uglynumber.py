@@ -5,11 +5,11 @@
 def primes(n, l):
     while n % 2 == 0:
         l.append(2)
-        n //= 2
+        n /= 2
     for i in range(3, int(n ** 0.5) + 1, 2):
         while n % i == 0:
             l.append(i)
-            n //= i
+            n /= i
     if n > 2:
         l.append(n)
     return l
@@ -25,10 +25,12 @@ def is_ugly(n):
 def fun_nth_uglynumber(n):
     i = 2
     c = 0
+    if n == 0:
+        return 1
     while 1:
         if is_ugly(i):
+            c += 1
             if c == n:
                 break
-            c += 1
         i += 1
     return i
