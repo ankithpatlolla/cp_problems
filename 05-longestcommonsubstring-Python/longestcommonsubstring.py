@@ -5,7 +5,7 @@
 # longestCommonSubstring("abcdef", "ghi") returns "" (the empty string)
 # If there are two or more longest common substrings, return the lexicographically smaller one (ie, just use "<" to
 # compare the strings). So, for example:
-# longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab"
+# longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab".
 
 def longestcommonsubstring(s1, s2):
     # Yourcode goes here
