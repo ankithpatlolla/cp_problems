@@ -7,13 +7,9 @@
 
 def samechars(s1, s2):
     # Your code goes here
+    if type(s1) != str or type(s2) != str:
+        return False
     if len(s1) == 0 and len(s2) == 0:
         return True
-    if type(s1) != 'str' or type(s2) != 'str':
-        return False
     else:
-        print("in else")
         return sorted(set(s1)) == sorted(set(s2))
-
-
-print(samechars("abcabcabc", "abc"))
