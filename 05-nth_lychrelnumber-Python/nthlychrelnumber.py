@@ -11,9 +11,7 @@ def is_lychreal(n):
         rem = n % 10
         res = 10 * res + rem
         n //= 10
-    print(res, "before")
-    res = res + x
-    print(res)
+    res += x
     if str(res) == str(res)[::-1]:
         return False
     return True
