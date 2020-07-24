@@ -6,7 +6,7 @@ def primes(n, l):
     while n % 2 == 0:
         l.append(2)
         n //= 2
-    for i in range(3, (n ** 0.5) + 1, 2):
+    for i in range(3, int(n ** 0.5) + 1, 2):
         while n % i == 0:
             l.append(i)
             n //= i
