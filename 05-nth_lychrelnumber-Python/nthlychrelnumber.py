@@ -11,6 +11,7 @@ def is_lychreal(n):
         res = 10 * res + rem
         n //= 10
     res += n
+    print(res)
     if str(res) == str(res)[::-1]:
         return False
     return True
@@ -18,11 +19,11 @@ def is_lychreal(n):
 
 def nthlychrelnumbers(n):
     # your code goes here
-    i = 196
+    i = 195
     while n != -1:
+        i += 1
         if is_lychreal(i):
             n -= 1
-        i += 1
     return i
 
 
