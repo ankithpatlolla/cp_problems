@@ -11,5 +11,4 @@ def samechars(s1, s2):
         return False
     if len(s1) == 0 and len(s2) == 0:
         return True
-    if sorted(set(s1)) == sorted(set(s2)):
-        return True
+    return sorted(set(s1)) == sorted(set(s2))
