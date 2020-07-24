@@ -25,8 +25,7 @@ def longestcommonsubstring(s1, s2):
                         res = s
                 elif len(res) < len(s):
                     res = s
-
     return res
 
 
-print(longestcommonsubstring("xyzabc", "xyztgfjabc"))
+# print(longestcommonsubstring("xyzabc", "xyztgfjabc"))
