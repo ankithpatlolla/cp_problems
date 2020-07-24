@@ -11,7 +11,8 @@ def is_tidy(n):
     n //= 10
     while n > 0:
         x = n % 10
-        if x >= prev:
+        print(x, "XXXXXXXXXXXXXXXXX")
+        if x > prev:
             return False
         n //= 10
         prev = x
@@ -19,7 +20,7 @@ def is_tidy(n):
 
 
 def fun_nth_tidynumber(n):
-    i = 0
+    i = 1
     c = 0
     while True:
         if is_tidy(i):
@@ -28,3 +29,6 @@ def fun_nth_tidynumber(n):
             c += 1
         i += 1
     return i
+
+
+print(is_tidy(122))
