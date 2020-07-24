@@ -22,8 +22,9 @@ def longestcommonsubstring(s1, s2):
             res = s
         for j in range(i, len(s1)):
             s += s1[j]
+            print(s, "ssssssssssss")
             if s in s2:
-                if len(res) <= len(s):
+                if len(res) < len(s):
                     res = s
     return res
 
