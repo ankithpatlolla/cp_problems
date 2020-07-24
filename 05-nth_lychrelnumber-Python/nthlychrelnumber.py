@@ -20,7 +20,7 @@ def is_lychreal(n):
 def nthlychrelnumbers(n):
     # your code goes here
     i = 195
-    while n != -1:
+    while n > 0:
         i += 1
         if is_lychreal(i):
             n -= 1
