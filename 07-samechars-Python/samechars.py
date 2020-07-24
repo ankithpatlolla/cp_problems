@@ -7,8 +7,7 @@
 
 def samechars(s1, s2):
     # Your code goes here
-    print(type(s1), type(s2))
-    if type(s1) != 'str' and type(s2) != 'str':
+    if type(s1) != 'str' or type(s2) != 'str':
         return False
     if len(s1) == 0 and len(s2) == 0:
         return True
