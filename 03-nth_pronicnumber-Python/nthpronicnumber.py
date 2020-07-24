@@ -6,7 +6,7 @@
 
 def nthpronicnumber(n):
     # Your code goes here
-    i = 0
+    i = 1
     c = 0
     res = 0
     while 1:
@@ -14,4 +14,5 @@ def nthpronicnumber(n):
             break
         res = i * (i + 1)
         c += 1
+        i += 1
     return res
