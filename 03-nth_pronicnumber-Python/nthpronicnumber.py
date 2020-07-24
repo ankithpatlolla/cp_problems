@@ -13,5 +13,5 @@ def nthpronicnumber(n):
         if c == n:
             break
         res = i * (i + 1)
-        C += 1
+        c += 1
     return res
