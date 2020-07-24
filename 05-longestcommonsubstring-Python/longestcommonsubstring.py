@@ -17,16 +17,14 @@ def longestcommonsubstring(s1, s2):
         s1, s2 = s2, s1
 
     for i in range(len(s1)):
-        s = s1[i]
-        if s in s2:
-            res = s
+        s = ""
         for j in range(i, len(s1)):
             s += s1[j]
-            print(s, "ssssssssssss")
+            # print(s, "ssssssssssss")
             if s in s2:
                 if len(res) < len(s):
                     res = s
     return res
 
 
-print(longestcommonsubstring("abc", "abtgfjabc"))
+# print(longestcommonsubstring("abc", "abtgfjabc"))
