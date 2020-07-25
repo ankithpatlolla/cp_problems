@@ -41,12 +41,11 @@ def is_circular(n):
 
 def nthcircularprime(n):
     # Your code goes here
-    i = 1
+    i = 3
     if n == 0:
         return 2
-    while n > 0:
+    while n != -1:
         if is_circular(i):
             n -= 1
         i += 1
-
     return i
