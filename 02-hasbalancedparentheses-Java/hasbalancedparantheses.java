@@ -20,7 +20,11 @@ class hasbalancedparantheses {
 			}
 			else if (i == '(') {
 				st.push(i);
-			} else if((char)(st.pop()) != '(') {
+			} else if (st.isEmpty()) {
+				return false;
+
+			}
+			else if((char)(st.pop()) != '(') {
 				return false;
 			}
 		}
