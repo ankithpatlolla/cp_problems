@@ -10,14 +10,14 @@
 
 class largestnumber {
 	public int fun_largestnumber(String s){
-		s = (s.replaceAll(",", "")).replaceAll(" ", "");
+		// s = (s.replaceAll(",", "")).replaceAll(" ", "");
 		String prev = "";
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
 			String ch = String.valueOf(s.charAt(i));
 			try {
 				int x = Integer.parseInt(ch);
-				prev += s.charAt(i);
+				prev += ch;
 			} catch (Exception e) {
 				int temp = Integer.parseInt(prev);
 				if (temp > maxi) {
