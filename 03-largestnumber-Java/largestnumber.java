@@ -12,7 +12,7 @@ class largestnumber {
 	public int fun_largestnumber(String s){
 		String prev = "";
 		int maxi = 0;
-		for(int i = 0; i < s.length(); i++) {
+		for(int i = 0; i < s.length() - 1; i++) {
 			String ch = Character.toString(s.charAt(i));
 			try {
 				int x = Integer.parseInt(ch);
