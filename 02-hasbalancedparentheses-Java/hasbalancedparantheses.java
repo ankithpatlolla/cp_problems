@@ -18,12 +18,13 @@ class hasbalancedparantheses {
 			if (i == '(' || i == ')') {
 				if (i == '(') {
 					st.push(i);
+					continue;
 				}
 				if (st.isEmpty()) {
 					return false;
 				}
-				else if((char)(st.pop()) != ')') {
-					return false;
+				else {
+					st.pop();
 				}
 			}
 			
