@@ -6,7 +6,7 @@
 
 class nthtenlyprime {
 	public boolean is_prime(int n) {
-		if(n <= 1) {
+		if(n <= 0) {
 			return false;
 		}
 		for (int i = 2; i < (n / 2); i++) {
@@ -32,7 +32,7 @@ class nthtenlyprime {
 		return false;
 	}
 	public int fun_nthtenlyprime(int n){
-		int i = 0;
+		int i = 19;
 		int c = -1;
 		while(true) {
 			if (is_additive(i) == true) {
