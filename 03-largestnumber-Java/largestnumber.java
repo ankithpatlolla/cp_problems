@@ -10,7 +10,6 @@
 
 class largestnumber {
 	public int fun_largestnumber(String s){
-		s = s.trim();
 		String prev = "";
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
