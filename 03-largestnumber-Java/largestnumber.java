@@ -13,7 +13,7 @@ class largestnumber {
 		String prev = "";
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
-			String ch = Character.toString(s.charAt(i));
+			String ch = String.valueOf(s.charAt(i));
 			try {
 				int x = Integer.parseInt(ch);
 				prev += s.charAt(i);
