@@ -4,4 +4,4 @@
 
 def getallpermutations(x):
     # Your code goes here
-    return x
+    pass
