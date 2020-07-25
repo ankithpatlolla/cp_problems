@@ -6,7 +6,7 @@
 
 class nthtenlyprime {
 	public boolean is_prime(int n) {
-		if(n <= 0) {
+		if(n <= 1) {
 			return false;
 		}
 		for (int i = 2; i < (n / 2); i++) {
@@ -17,7 +17,7 @@ class nthtenlyprime {
 		return true;
 	}
 
-	public boolean is_additive(int n) {
+	public boolean is_tenly(int n) {
 		if (is_prime(n) == false) {
 			return false;
 		}
@@ -26,7 +26,7 @@ class nthtenlyprime {
 			sum += n % 10;
 			n = n / 10;
 		}
-		if (is_prime(sum) == true) {
+		if (sum == 10) {
 			return true;
 		}
 		return false;
@@ -35,7 +35,7 @@ class nthtenlyprime {
 		int i = 19;
 		int c = -1;
 		while(true) {
-			if (is_additive(i) == true) {
+			if (is_tenly(i) == true) {
 				c++;
 			}
 			if (c == n) {
