@@ -18,12 +18,15 @@ class nthtenlyprime {
 	}
 
 	public boolean is_additive(int n) {
+		if (is_prime(n) == false) {
+			return false;
+		}
 		int sum = 0;
 		while (n > 0){
 			sum += n % 10;
 			n = n / 10;
 		}
-		if (is_prime(sum)) {
+		if (is_prime(sum) == true) {
 			return true;
 		}
 		return false;
