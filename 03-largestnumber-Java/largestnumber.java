@@ -11,20 +11,19 @@
 class largestnumber {
 	public int fun_largestnumber(String s){
 		// s = (s.replaceAll(",", "")).replaceAll(" ", "");
-		String prev = "";
+		int prev = 0;
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
-			String ch = String.valueOf(s.charAt(i));
-			try {
-				int x = Integer.parseInt(ch);
-				prev += ch;
-			} catch (Exception e) {
-				int temp = Integer.parseInt(prev);
-				if (temp > maxi) {
-					maxi = temp;
+			char ch = s.charAt(i);
+			if (Character.isDigit(ch)) {
+				prev = (prev * 10) + (ch - '0');
+			} else {
+				if (maxi < prev) {
+					maxi = prev;
 				}
-				prev = "";
+				prev = 0;
 			}
+			
 		}
 		return maxi;
 	}
