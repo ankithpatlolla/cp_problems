@@ -13,9 +13,9 @@ class largestnumber {
 		String prev = "";
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
-			char ch = s.charAt(i);
+			String ch = Character.toString(s.charAt(i));
 			try {
-				int x = Integer.parseInt(String.valueOf(ch));
+				int x = Integer.parseInt(ch);
 				prev += ch;
 			} catch (Exception e) {
 				if (Integer.parseInt(prev) > maxi) {
