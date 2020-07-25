@@ -16,7 +16,7 @@ class nthtenlyprime {
 		}
 		return true;
 	}
-
+	
 	public boolean is_tenly(int n) {
 		if (is_prime(n) == false) {
 			return false;
