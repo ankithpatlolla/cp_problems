@@ -18,9 +18,6 @@ class nthtenlyprime {
 	}
 
 	public boolean is_additive(int n) {
-		if (!is_prime(n)) {
-			return false;
-		}
 		int sum = 0;
 		while (n > 0){
 			sum += n % 10;
@@ -33,7 +30,7 @@ class nthtenlyprime {
 	}
 	public int fun_nthtenlyprime(int n){
 		int i = 0;
-		int c = 0;
+		int c = -1;
 		while(true) {
 			if (is_additive(i)) {
 				c++;
