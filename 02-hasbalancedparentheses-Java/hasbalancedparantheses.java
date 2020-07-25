@@ -15,18 +15,15 @@ class hasbalancedparantheses {
 		Stack st = new Stack();
 		for (int k = 0; k < s.length(); k++) {
 			char i = s.charAt(k);
-			if (i != '(' || i != ')') {
-				continue;
+			if (i == '(' || i == ')') {
+				if (i == '(') {
+					st.push(i);
+				}
+				else if((char)(st.pop()) != ')') {
+					return false;
+				}
 			}
-			else if (i == '(') {
-				st.push(i);
-			} else if (st.isEmpty()) {
-				return false;
-
-			}
-			else if((char)(st.pop()) != '(') {
-				return false;
-			}
+			
 		}
 		if (st.isEmpty()) {
 			return true;
