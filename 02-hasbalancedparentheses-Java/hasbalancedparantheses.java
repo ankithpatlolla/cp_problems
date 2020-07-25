@@ -19,6 +19,9 @@ class hasbalancedparantheses {
 				if (i == '(') {
 					st.push(i);
 				}
+				if (st.isEmpty()) {
+					return false;
+				}
 				else if((char)(st.pop()) != ')') {
 					return false;
 				}
