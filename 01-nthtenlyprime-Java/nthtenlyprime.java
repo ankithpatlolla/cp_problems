@@ -35,7 +35,7 @@ class nthtenlyprime {
 		int i = 0;
 		int c = -1;
 		while(true) {
-			if (is_additive(i)) {
+			if (is_additive(i) == true) {
 				c++;
 			}
 			if (c == n) {
