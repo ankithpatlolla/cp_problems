@@ -16,13 +16,12 @@ class largestnumber {
 			String ch = Character.toString(s.charAt(i));
 			try {
 				int x = Integer.parseInt(ch);
-				prev += ch;
+				prev += s.charAt(i);
 			} catch (Exception e) {
 				if (Integer.parseInt(prev) > maxi) {
 					maxi = Integer.parseInt(prev);
 				}
 				prev = "";
-				continue;
 			}
 		}
 		return maxi;
