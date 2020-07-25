@@ -10,17 +10,18 @@
 
 class largestnumber {
 	public int fun_largestnumber(String s){
-		int prev = 0;
+		String prev = "";
 		int maxi = 0;
 		for(int i = 0; i < s.length(); i++) {
-			String ch = Character.toString(s.charAt(i));
+			char ch = s.charAt(i);
 			try {
-				prev += Integer.parseInt(ch);
-				if (maxi < prev) {
-					maxi = prev;
-				}
+				int x = Integer.parseInt(String.valueOf(ch));
+				prev += ch;
 			} catch (Exception e) {
-				prev = 0;
+				if (Integer.parseInt(prev) > maxi) {
+					maxi = Integer.parseInt(prev);
+				}
+				prev = "";
 				continue;
 			}
 		}
