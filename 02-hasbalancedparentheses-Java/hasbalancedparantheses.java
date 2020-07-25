@@ -11,6 +11,7 @@ import java.util.*;
 
 class hasbalancedparantheses {
 	public boolean fun_hasbalancedparantheses(String s){
+		s = s.trim();
 		Stack st = new Stack();
 		for (int k = 0; k < s.length(); k++) {
 			char i = s.charAt(k);
